@@ -1,2 +1,23 @@
 /* CSS Document */
 
+
+.bg1-img {
+	width: 100%;
+	height: auto;
+	opacity: 0.9;
+}
+
+.main-heading {
+	position: fixed;
+	top: 50px;
+	width: 100%;
+}
+
+.top-heading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 7vw;
+	color: white;
+}

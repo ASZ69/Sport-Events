@@ -107,7 +107,7 @@
 
 .set-row-img {
 	width: 100%;
-	border-radius: 5px;
+	border-radius: 12px;
 	transition: all 1s;
 }
 
@@ -117,3 +117,8 @@
 }
 
 
+
+.heading-image {
+	width: 60px;
+	margin-top: -10px;
+}

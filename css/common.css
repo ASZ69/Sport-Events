@@ -16,3 +16,12 @@
 .mr-b-0 {
 	margin-bottom: 0px !important;
 }
+
+.pd-t-10 {
+	padding-top: 10px;
+}
+
+.pd-tb-10 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

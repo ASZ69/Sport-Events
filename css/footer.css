@@ -1,0 +1,9 @@
+/* CSS Document */
+.footer-div {
+  width: 100%;
+  background-color: #000;
+  vertical-align: bottom;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+}

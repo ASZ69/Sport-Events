@@ -2,3 +2,17 @@
 .dis-none{
 	display: none;
 }
+
+.mr-tb-15 {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.mr-lr-dec {
+	margin-left: -15px !important;
+	margin-right: -15px !important;
+}
+
+.mr-b-0 {
+	margin-bottom: 0px !important;
+}

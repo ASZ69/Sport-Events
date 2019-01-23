@@ -4,16 +4,25 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<link rel="shortcut icon" href="images/logo/ball.jpg">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/navbar-dropdown.css">
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--apear plugin-->
+	<script src="js/appear.js"></script>
+	<!--apear plugin end-->
 	<script src="js/index.js"></script>
+	
+	<!--bootstrap 4-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-	<title>Sport Events</title>
+	<!--end bootstrap 4-->
+	
+	<title>Sports-Events</title>
 </head>
 
 <body>
@@ -21,7 +30,7 @@
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
 		<a class="navbar-brand" href="#">
-			<img src="images/logo/ball.png" width="20px" height="20px" alt="LOGO"> Sport Events
+			<img src="images/logo/ball.png" width="20px" height="20px" alt="LOGO"> Sports Events
 		</a>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -83,7 +92,7 @@
 
 	<div class="container-fluid">
 
-		<div class="main-img-p">
+		<div class="main-img-p" id="background">
 			<img src="images/cricket/stadium-wide.jpg" alt="BG" class="bg-img1">
 		</div>
 		<div class="main-heading">
@@ -186,58 +195,130 @@
 		
 		<div class="row vid-p bg-white">
 			<div class="col-md-3">
+				<br>
 				<h1>Cricket</h1>
 				<video width="100%" autoplay loop poster="videos/row-1/thumb/cricket.jpg">
 					<source src="videos/row-1/cricket.mp4" type="video/mp4">
 				</video>
 				<p>The Best Cricket Shots</p>
+				<br>
 			</div>
 			<div class="col-md-3">
+				<br>
 				<h1>Football</h1>
 				<video width="100%" autoplay loop poster="videos/row-1/thumb/football.jpg">
 					<source src="videos/row-1/football.mp4" type="video/mp4">
 				</video>
-				<p>The Best Football goes</p>
+				<p>The Best Football Players</p>
+				<br>
 			</div>
 			<div class="col-md-3">
+				<br>
 				<h1>Basketball</h1>
 				<video width="100%" autoplay loop poster="videos/row-1/thumb/basketball.jpg">
 					<source src="videos/row-1/basketball.mp4" type="video/mp4">
 				</video>
-				<p>The Best Basketball shots</p>
+				<p>The Best Basketball Players</p>
+				<br>
 			</div>
 			<div class="col-md-3">
+				<br>
 				<h1>Hockey</h1>
 				<video width="100%" autoplay loop poster="videos/row-1/thumb/hockey.jpg">
 					<source src="videos/row-1/hockey.mp4" type="video/mp4">
 				</video>
-				<p>The Best Hockey flies</p>
+				<p>The Best Hockey Girls</p>
+				<br>
 			</div>
 		</div>
 
-		<h1 style="height: 300px">
-			<center>Football</center>
-		</h1>
+		<h1 class="heading-transparent">Cricket</h1>
 
-	</div>
+		<div class="row my-rows bg-white">
+			<div class="col-md-3">
+				<img src="images/cricket/rows/r-1-a.jpg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+			<div class="col-md-3">
+				<img src="images/cricket/rows/r-1-b.jpeg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+			<div class="col-md-3">
+				<img src="images/cricket/rows/r-1-c.jpg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+			<div class="col-md-3">
+				<img src="images/cricket/rows/r-1-d.jpg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+		</div>
+		
+		<div class="row my-rows bg-white">
+			<div class="col-md-6">
+				<img src="images/cricket/rows/r-2-a.jpg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+			<div class="col-md-6">
+				<img src="images/cricket/rows/r-2-b.jpg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+		</div>
+		
+		<h1 class="bg-white my-rows mr-b-0 mr-lr-dec"><center>THE PSL MOMENT</center></h1>
+		
+		<div class="row my-rows bg-white">
+			<div class="col-md-3">
+				<img src="images/cricket/rows/r-3-a.jpg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+			<div class="col-md-3">
+				<img src="images/cricket/rows/r-3-b.jpg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+			<div class="col-md-3">
+				<img src="images/cricket/rows/r-3-c.jpg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+			<div class="col-md-3">
+				<img src="images/cricket/rows/r-3-d.jpg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+		</div>
+		
+		<h1 class="heading-transparent">Football</h1>
 
-	<div class="sub-body bg-white">
-		<h1>
-			Ignorant branched humanity led now marianne too strongly entrance. Rose to shew bore no ye of paid rent form. Old
-			design are dinner better nearer silent excuse. She which are maids boy sense her shade. Considered reasonable we
-			affronting on expression in. So cordial anxious mr delight. Shot his has must wish from sell nay. Remark fat set why
-			are sudden depend change entire wanted. Performed remainder attending led fat residence far.</h1>
+		<div class="row my-rows bg-white">
+			<div class="col-md-3">
+				<img src="images/cricket/rows/r-1-a.jpg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+			<div class="col-md-3">
+				<img src="images/cricket/rows/r-1-b.jpeg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+			<div class="col-md-3">
+				<img src="images/cricket/rows/r-1-c.jpg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+			<div class="col-md-3">
+				<img src="images/cricket/rows/r-1-d.jpg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+		</div>
+		
+		<div class="row my-rows bg-white">
+			<div class="col-md-6">
+				<img src="images/cricket/rows/r-2-a.jpg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+			<div class="col-md-6">
+				<img src="images/cricket/rows/r-2-b.jpg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+		</div>
+		
+		<h1 class="bg-white my-rows mr-b-0 mr-lr-dec"><center>THE FIFA EVENT</center></h1>
+		
+		<div class="row my-rows bg-white">
+			<div class="col-md-3">
+				<img src="images/cricket/rows/r-3-a.jpg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+			<div class="col-md-3">
+				<img src="images/cricket/rows/r-3-b.jpg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+			<div class="col-md-3">
+				<img src="images/cricket/rows/r-3-c.jpg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+			<div class="col-md-3">
+				<img src="images/cricket/rows/r-3-d.jpg" class="set-row-img mr-tb-15" alt="CRICK">
+			</div>
+		</div>
+		
 	</div>
-	<h1 style="height: 300px"></h1>
-	<div class="body-1 bg-white">
-		<h1>
-			Although moreover mistaken kindness me feelings do be marianne. Son over own nay with tell they cold upon are.
-			Cordial village and settled she ability law herself. Finished why bringing but sir bachelor unpacked any thoughts.
-			Unpleasing unsatiable particular inquietude did nor sir. Get his declared appetite distance his together now
-			families. Friends am himself at on norland it viewing. Suspected elsewhere you belonging continued commanded she.
-		</h1>
-	</div>
-
 
 </body>
 

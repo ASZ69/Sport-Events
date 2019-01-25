@@ -2,16 +2,12 @@
 
 $(document).ready(function(){
 	
-	var bgVideos = '<video autoplay loop muted class="bg-img1 dis-none"><source src="videos/bg/cricicket.mp4"></video><video autoplay loop muted class="bg-img1 dis-none"><source src="videos/bg/football.mp4"></video><video autoplay loop muted class="bg-img1 dis-none"><source src="videos/bg/hockey.mp4"></video>';
+	var bgVideos = '<video autoplay loop muted class="bg-img1 dis-none"><source src="videos/bg/cricicket.mp4"></video><video autoplay loop muted class="bg-img1 dis-none"><source src="videos/bg/football.mp4"></video><video autoplay loop muted class="bg-img1 dis-none"><source src="videos/bg/hockey.mp4"></video><video autoplay loop muted class="bg-img1 dis-none"><source src="videos/bg/basketball.mp4"></video>';
 	$('#background').append(bgVideos);
 	
 	$(function() {
 
 		$('.heading-transparent').appear();
-	  	$('#r1Vid1').appear();
-	  	$('#r1Vid2').appear();
-	  	$('#r1Vid3').appear();
-	  	$('#r1Vid4').appear();
 
 	  	$(document.body).on('appear', '.heading-transparent', function(e, $affected) {
 			$affected.each(function() {
@@ -27,43 +23,34 @@ $(document).ready(function(){
 	  	});
 		
 //		animation working start
-		$(document.body).on('appear', '#r1Vid1', function(e, $affected) {
-			  $affected.addClass('animated slideInLeft slow');
-	  	});
-
-		$(document.body).on('disappear', '#r1Vid1', function(e, $affected) {
-			  $affected.removeClass('slideInLeft');
-	  	});
 		
-		$(document.body).on('appear', '#r1Vid2', function(e, $affected) {
-			  $affected.addClass('animated slideInLeft fast');
-	  	});
-
-		$(document.body).on('disappear', '#r1Vid2', function(e, $affected) {
-			  $affected.removeClass('slideInLeft');
-	  	});
-		
-		$(document.body).on('appear', '#r1Vid3', function(e, $affected) {
-			  $affected.addClass('animated slideInRight fast');
-	  	});
-		
-		$(document.body).on('disappear', '#r1Vid3', function(e, $affected) {
-			  $affected.removeClass('slideInRight');
-	  	});
-		
-		$(document.body).on('appear', '#r1Vid4', function(e, $affected) {
-			  $affected.addClass('animated slideInRight slow');
-	  	});
-
-		$(document.body).on('disappear', '#r1Vid4', function(e, $affected) {
-			  $affected.removeClass('slideInRight');
-	  	});
+		anim("#r1Vid1","slideInLeft","slow");
+		anim("#r1Vid2","slideInLeft","fast");
+		anim("#r1Vid3","slideInRight","fast");
+		anim("#r1Vid4","slideInRight","slow");
+		anim(".heading-transparent","zoomIn","slower");
+		anim("#r2","fadeInRight","slow");
+		anim("#r3","fadeInLeft","slow");
+		anim("#r4","fadeInUp","slow");
 		
 //		animation working end
 		
 	});
 	
 });
+
+function anim(id,classList,unRemoveableClasses){
+	
+	$(id).appear();
+	
+	$(document.body).on('appear', id, function(e, $affected) {
+		$affected.addClass('animated '+classList+' '+unRemoveableClasses);
+	});
+	
+	$(document.body).on('disappear', id, function(e, $affected) {
+		$affected.removeClass(classList);
+	});
+}
 
 function changeBG($ref){
 	switch($ref.text().trim()){
@@ -89,6 +76,14 @@ function changeBG($ref){
 					$(this).css("display","none");
 				});
 				$('#background video').eq(2).css('display','block');
+			}
+			break;
+		case "Basketball":
+			if($('#background video').eq(3).css('display') == 'none'){
+				$('#background').children().each(function(){
+					$(this).css("display","none");
+				});
+				$('#background video').eq(3).css('display','block');
 			}
 			break;
 	}

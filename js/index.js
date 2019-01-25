@@ -2,20 +2,8 @@
 
 $(document).ready(function(){
 	
-//	$(window).scroll(function() {
-//	   var hT = $('.heading-transparent').offset().top,
-//		   hH = $('.heading-transparent').outerHeight(),
-//		   wH = $(window).height(),
-//		   wS = $(this).scrollTop();
-//		console.log("scrolltop is: ",wS);
-//	   if (wS > (hT+hH-wH)){
-//		   console.log('H1 on the view!');
-//	   }
-//	});
-	
-//	$('.heading-transparent').appear(function(){
-//		alert('heading aagai');
-//	});
+	var bgVideos = '<video autoplay loop muted class="bg-img1 dis-none"><source src="videos/bg/cricicket.mp4"></video><video autoplay loop muted class="bg-img1 dis-none"><source src="videos/bg/football.mp4"></video><video autoplay loop muted class="bg-img1 dis-none"><source src="videos/bg/hockey.mp4"></video>';
+	$('#background').append(bgVideos);
 	
 	$(function() {
 
@@ -23,30 +11,48 @@ $(document).ready(function(){
 
 	  $(document.body).on('appear', '.heading-transparent', function(e, $affected) {
 		// this code is executed for each appeared element
-
 		$affected.each(function() {
 		  changeBG($(this));
 		})
 		  
-		  
 	  });
 
-//	  $(document.body).on('disappear', '.heading-transparent', function(e, $affected) {
-//		// this code is executed for each disappeared element
-//		$affected.each(function() {
-//		  alert('disappered');
-//		})
-//	  });
+	  $(document.body).on('disappear', '.heading-transparent:eq(0)', function(e, $affected) {
+		  $('#background').children().each(function(){
+			  $(this).css("display","none");
+		  });
+		  $('#background img').css('display','block');
+	  });
+		
 	});
 	
 });
 
-
 function changeBG($ref){
-	if($('#background').children()[0].src != "https://media.giphy.com/media/SwD9JjkA073Og/giphy.gif"){
-		
-		$('#background').children().remove();
-		$('#background').append('<img src="https://media.giphy.com/media/SwD9JjkA073Og/giphy.gif" alt="BG" class="bg-img1">');
-		
+	switch($ref.text().trim()){
+		case "Cricket":
+			if($('#background video').eq(0).css('display') == 'none'){
+				$('#background').children().each(function(){
+					$(this).css("display","none");
+				});
+				$('#background video').eq(0).css('display','block');
+			}
+			break;
+		case "Football":
+			if($('#background video').eq(1).css('display') == 'none'){
+				$('#background').children().each(function(){
+					$(this).css("display","none");
+				});
+				$('#background video').eq(1).css('display','block');
+			}
+			break;
+		case "Hockey":
+			if($('#background video').eq(2).css('display') == 'none'){
+				$('#background').children().each(function(){
+					$(this).css("display","none");
+				});
+				$('#background video').eq(2).css('display','block');
+			}
+			break;
 	}
 }

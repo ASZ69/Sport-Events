@@ -7,22 +7,59 @@ $(document).ready(function(){
 	
 	$(function() {
 
-	  $('.heading-transparent').appear();
+		$('.heading-transparent').appear();
+	  	$('#r1Vid1').appear();
+	  	$('#r1Vid2').appear();
+	  	$('#r1Vid3').appear();
+	  	$('#r1Vid4').appear();
 
-	  $(document.body).on('appear', '.heading-transparent', function(e, $affected) {
-		// this code is executed for each appeared element
-		$affected.each(function() {
-		  changeBG($(this));
-		})
-		  
-	  });
+	  	$(document.body).on('appear', '.heading-transparent', function(e, $affected) {
+			$affected.each(function() {
+			  changeBG($(this));
+			})  
+	  	});
+		
+	  	$(document.body).on('disappear', '.heading-transparent:eq(0)', function(e, $affected) {
+			$('#background').children().each(function(){
+			  	$(this).css("display","none");
+		  	});
+		  	$('#background img').css('display','block');
+	  	});
+		
+//		animation working start
+		$(document.body).on('appear', '#r1Vid1', function(e, $affected) {
+			  $affected.addClass('animated slideInLeft slow');
+	  	});
 
-	  $(document.body).on('disappear', '.heading-transparent:eq(0)', function(e, $affected) {
-		  $('#background').children().each(function(){
-			  $(this).css("display","none");
-		  });
-		  $('#background img').css('display','block');
-	  });
+		$(document.body).on('disappear', '#r1Vid1', function(e, $affected) {
+			  $affected.removeClass('slideInLeft');
+	  	});
+		
+		$(document.body).on('appear', '#r1Vid2', function(e, $affected) {
+			  $affected.addClass('animated slideInLeft fast');
+	  	});
+
+		$(document.body).on('disappear', '#r1Vid2', function(e, $affected) {
+			  $affected.removeClass('slideInLeft');
+	  	});
+		
+		$(document.body).on('appear', '#r1Vid3', function(e, $affected) {
+			  $affected.addClass('animated slideInRight fast');
+	  	});
+		
+		$(document.body).on('disappear', '#r1Vid3', function(e, $affected) {
+			  $affected.removeClass('slideInRight');
+	  	});
+		
+		$(document.body).on('appear', '#r1Vid4', function(e, $affected) {
+			  $affected.addClass('animated slideInRight slow');
+	  	});
+
+		$(document.body).on('disappear', '#r1Vid4', function(e, $affected) {
+			  $affected.removeClass('slideInRight');
+	  	});
+		
+//		animation working end
 		
 	});
 	

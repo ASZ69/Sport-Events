@@ -1,5 +1,9 @@
 /* CSS Document */
 
+html,body{
+	overflow-x: hidden;
+}
+
 .bg-img1 {
 	position: relative;
 	width: 100%;
@@ -122,4 +126,8 @@
 .heading-image {
 	width: 60px;
 	margin-top: -10px;
+}
+
+.bg-img {
+	height: 50vh !important;
 }

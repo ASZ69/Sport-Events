@@ -2,6 +2,8 @@
 
 $(document).ready(function(){
 	
+//	$('#background').append('<img src="images/cricket/stadium-wide.jpg" alt="BG" class="bg-img bg-img1">');
+	
 	var bgVideos = '<video autoplay loop muted class="bg-img1 dis-none"><source src="videos/bg/cricicket.mp4"></video><video autoplay loop muted class="bg-img1 dis-none"><source src="videos/bg/football.mp4"></video><video autoplay loop muted class="bg-img1 dis-none"><source src="videos/bg/hockey.mp4"></video><video autoplay loop muted class="bg-img1 dis-none"><source src="videos/bg/basketball.mp4"></video>';
 	$('#background').append(bgVideos);
 	
@@ -29,9 +31,20 @@ $(document).ready(function(){
 		anim("#r1Vid3","slideInRight","fast");
 		anim("#r1Vid4","slideInRight","slow");
 		anim(".heading-transparent","zoomIn","slower");
-		anim("#r2","fadeInRight","slow");
-		anim("#r3","fadeInLeft","slow");
-		anim("#r4","fadeInUp","slow");
+//		anim("#r2","fadeInRight","slow");
+//		anim("#r3","fadeInLeft","slow");
+//		anim("#r4","fadeInUp","slow");
+		anim(".hOverlay:eq(0) div:eq(0)","slideOutLeft","");
+		anim(".hOverlay:eq(0) div:eq(1)","slideOutRight","");
+		
+		anim(".hOverlay:eq(1) div:eq(0)","slideOutLeft","");
+		anim(".hOverlay:eq(1) div:eq(1)","slideOutRight","");
+		
+		anim(".hOverlay:eq(2) div:eq(0)","slideOutLeft","");
+		anim(".hOverlay:eq(2) div:eq(1)","slideOutRight","");
+		
+		anim(".hOverlay:eq(3) div:eq(0)","slideOutLeft","");
+		anim(".hOverlay:eq(3) div:eq(1)","slideOutRight","");
 		
 //		animation working end
 		

@@ -50,6 +50,10 @@ $(document).ready(function(){
 		
 	});
 	
+	$(function () {
+		$('div.hover-effect ').hoverdir();
+	});
+	
 });
 
 function anim(id,classList,unRemoveableClasses){

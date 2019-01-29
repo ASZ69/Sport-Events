@@ -96,15 +96,14 @@
 		</div>
 	</nav>
 	
-	<div class="container-fluid mr-tp-56" ng-app="events">
+	<div class="container-fluid mr-tp-56" ng-app="events" ng-controller="categoriesControl">
 		
 		<div class="row">
 			
-			<div class="col-md-4 bg-danger" ng-controller="categoriesController">
-				{{x}}
+			<div class="col-md-4 bg-danger">
 				<ul>
 					<li>
-						<h3>The PSL</h3>
+						<h3 ng-click="showCat($event)">The PSL</h3>
 						<ul>
 							<li>PSL ONE</li>
 							<li>PSL TWO</li>
@@ -112,17 +111,41 @@
 						</ul>
 					</li>
 					<li>
-						<h3>The ICC</h3>
+						<h3 ng-click="showCat($event)">The ICC</h3>
 						<ul>
 							<li>PSL ONE</li>
 							<li>PSL TWO</li>
 							<li>PSL THREE</li>
+						</ul>
+					</li>
+					<li>
+						<h3>The IPL</h3>
+						<ul>
+							<li>IPL ONE</li>
+							<li>IPL TWO</li>
+							<li>IPL THREE</li>
+						</ul>
+					</li>
+					<li>
+						<h3>The BPL</h3>
+						<ul>
+							<li>BPL ONE</li>
+							<li>BPL TWO</li>
+							<li>BPL THREE</li>
 						</ul>
 					</li>
 				</ul>
 			</div>
 			
 			<div class="col-md-8 bg-info">
+				
+				<div ng-repeat="event in eventsArray">
+					<h1>{{event.heading}}</h1>
+					<h1>{{event.year}}</h1>
+					<h1>{{event.imgSrc}}</h1>
+					<h1>{{event.wiki}}</h1>
+					<br><br><br><br>
+				</div>
 				
 			</div>
 			

@@ -32,3 +32,8 @@
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
+
+.delay-1s{
+	-webkit-animation-delay: 1s !important;
+  	animation-delay: 1s !important;
+}

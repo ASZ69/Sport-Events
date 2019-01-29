@@ -4,6 +4,10 @@ body{
 	overflow-x: hidden;
 }
 
+h1{
+	font-size: 2vw;
+}
+
 .bg-img1 {
 	position: relative;
 	width: 100%;
@@ -122,8 +126,6 @@ body{
 	cursor: pointer;
 	opacity: 0.5;
 }
-
-
 
 .heading-image {
 	width: 60px;

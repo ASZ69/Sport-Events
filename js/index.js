@@ -31,9 +31,7 @@ $(document).ready(function(){
 		anim("#r1Vid3","slideInRight","fast");
 		anim("#r1Vid4","slideInRight","slow");
 		anim(".heading-transparent","zoomIn","slower");
-//		anim("#r2","fadeInRight","slow");
-//		anim("#r3","fadeInLeft","slow");
-//		anim("#r4","fadeInUp","slow");
+
 		anim(".hOverlay:eq(0) div:eq(0)","slideOutLeft","");
 		anim(".hOverlay:eq(0) div:eq(1)","slideOutRight","");
 		
@@ -45,6 +43,8 @@ $(document).ready(function(){
 		
 		anim(".hOverlay:eq(3) div:eq(0)","slideOutLeft","");
 		anim(".hOverlay:eq(3) div:eq(1)","slideOutRight","");
+		
+		anim(".set-row-img","pulse","slower");
 		
 //		animation working end
 		

@@ -9,10 +9,21 @@
 	font-size: 2vw;
 	cursor: pointer;
 	margin: 8px;
+	width: 5%;
 }
 
 .left-ul li{
-	margin-left: -10%;
+	margin-left: -12%;
+}
+
+.left-ul li ul li{
+	margin-left: 10%;
+	font-size: 1.8vw;
+	animation: 1.4s fadeInLeft;
+}
+
+.left-ul li div{
+	animation: 0.8s fadeInLeft;
 }
 
 .left-ul-hidden-list{
@@ -22,5 +33,5 @@
 
 .left-ul-show-list{
 	height: auto;
-	overflow: auto;
+	overflow: hidden;
 }

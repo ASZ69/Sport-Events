@@ -104,50 +104,13 @@
 			<div class="col-md-3">
 				<br>
 				<ul class="left-ul">
-					<li>
+					<li ng-repeat="league in categoryArray">
 						<div>
 							<span class="fa fa-caret-down"></span>
-							<h3 ng-click="showCat($event)">Pakistan Super League</h3>
+							<h3 ng-click="showCat($event)">{{league.name}}</h3>
 						</div>
 						<ul class="left-ul-show-list">
-							<li>PSL 2016</li>
-							<li>PSL 2017</li>
-							<li>PSL 2018</li>
-						</ul>
-					</li>
-					<li>
-						<div>
-							<span class="fa fa-caret-down"></span>
-							<h3 ng-click="showCat($event)">ICC ODI WorldCup</h3>
-						</div>
-						<ul class="left-ul-show-list">
-							<li>ICC 1999</li>
-							<li>ICC 2003</li>
-							<li>ICC 2007</li>
-							<li>ICC 2011</li>
-							<li>ICC 2015</li>
-						</ul>
-					</li>
-					<li>
-						<div>
-							<span class="fa fa-caret-down"></span>
-							<h3 ng-click="showCat($event)">The PSL</h3>
-						</div>
-						<ul class="left-ul-show-list">
-							<li>IPL ONE</li>
-							<li>IPL TWO</li>
-							<li>IPL THREE</li>
-						</ul>
-					</li>
-					<li>
-						<div>
-							<span class="fa fa-caret-down"></span>
-							<h3 ng-click="showCat($event)">The PSL</h3>
-						</div>
-						<ul class="left-ul-show-list">
-							<li>IPL ONE</li>
-							<li>IPL TWO</li>
-							<li>IPL THREE</li>
+							<li ng-repeat="seasons in league.seasons">{{seasons.name}}</li>
 						</ul>
 					</li>
 				</ul>
@@ -167,8 +130,10 @@
 							<h3>{{season.name}}</h3>
 							<h4>{{season.moreDetails.matchHost}}</h4>
 						</div>
-						<a href="" class="dis-blk text-center">View more...</a>
-						<a href="" class="dis-blk text-center mr-t-2">Get more details on Wikipedia...</a>
+						<a class="dis-blk text-center">View more...</a>
+						<a href="{{season.wiki}}" target="new" class="dis-blk text-center mr-t-2">
+							Get more details on Wikipedia...
+						</a>
 					</div>
 				</div>
 				

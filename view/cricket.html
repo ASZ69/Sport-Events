@@ -155,42 +155,24 @@
 			
 			<div class="col-md-9">
 				
-<!--
-				<div ng-repeat="event in eventsArray">
-					<h1>{{event.name}}</h1>
-					<div ng-repeat="n in event.seasons">
-						<h4>{{n.name}}</h4>
-					</div>
-				</div>
--->
-				<style>
-					
-				</style>
-<!--
-				
-				<div class="right-view">
-					<div ng-repeat="season in eventsArray.seasons">
-						<img src="{{season.imgSrc}}" alt="PIC">
-					</div>
-				</div>
--->
 				<h2 class="text-center">Select Event</h2>
-				<div class="right-view mr-tb-15">
-					<div>
+				<div class="right-view" ng-repeat="event in eventsArray">
+					<div ng-repeat="season in event.seasons" class="mr-lr-5 mr-tb-5">
 						<span class="dis-none"></span>
 						<div class="cd-img-p">
-							<img src="../images/cricket/cards/psl/header/2016.jpg" alt="PIC">
+							<img src="{{season.imgSrc}}" alt="PIC">
 						</div>
+						<hr>
 						<div class="card-heading">
-							<h3>PSL 2016</h3>
-							<h4>Dubai</h4>
+							<h3>{{season.name}}</h3>
+							<h4>{{season.moreDetails.matchHost}}</h4>
 						</div>
-						<a href="" class="dis-blk text-center">Get more details on Wikipedia...</a>
+						<a href="" class="dis-blk text-center">View more...</a>
+						<a href="" class="dis-blk text-center mr-t-2">Get more details on Wikipedia...</a>
 					</div>
 				</div>
 				
 			</div>
-			
 		</div>
 	</div>
 	

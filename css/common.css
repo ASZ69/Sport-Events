@@ -1,6 +1,11 @@
 /* CSS Document */
 *{user-select: none;}
 
+
+
+
+
+
 .dis-none{
 	display: none;
 }
@@ -56,4 +61,18 @@ ul{
 
 .dis-blk {
 	display: block;
+}
+
+.mr-t-2 {
+	margin-top: 2px !important;
+}
+
+.mr-lr-5 {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.mr-tb-5 {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }

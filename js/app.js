@@ -10,15 +10,15 @@ events.controller("categoriesControl",function($scope,$filter){
 		$scope.eventsArray = $filter('filter')(dataList, {name: category});
 	};
 	
-	$scope.eventsArray = $filter('filter')(dataList, {name: 'The PSL'});
+	$scope.eventsArray = $filter('filter')(dataList, {name: 'Pakistan Super League'});
 });
 
-var dataList = [{name:'The PSL',
+var dataList = [{name:'Pakistan Super League',
 				 seasons:[
 					 
-					 {name:'2015',
-					  wiki:'www.wiki.com/psl', 
-					  imgSrc:'../images/myimg.jpg',
+					 {name:'PSL 2016',
+					  wiki:'www.wiki.com/psl',
+					  imgSrc:'../images/cricket/cards/psl/header/2016.jpg',
 					  moreDetails:{
 						  images:[
 							  '../images/my.jpg',
@@ -26,11 +26,11 @@ var dataList = [{name:'The PSL',
 							  'adsfda'],
 						  scoreDefeat:'24/7',
 						  scoreWin:'12/24',
-						  matchHost:'quaidabad'}},
+						  matchHost:'Dubai'}},
 					 
-					 {name:'2017',
+					 {name:'PSL 2017',
 					  wiki:'www.wiki.com/psl', 
-					  imgSrc:'../images/myimg.jpg',
+					  imgSrc:'../images/cricket/cards/psl/header/2017.jpg',
 					  moreDetails:{
 						  images:[
 							  '../images/my.jpg',
@@ -38,11 +38,11 @@ var dataList = [{name:'The PSL',
 							  'adsfda'],
 						  scoreDefeat:'24/7',
 						  scoreWin:'12/24',
-						  matchHost:'quaidabad'}},
+						  matchHost:'Lahore'}},
 					 
-					 {name:'2019',
+					 {name:'PSL 2018',
 					  wiki:'www.wiki.com/psl', 
-					  imgSrc:'../images/myimg.jpg',
+					  imgSrc:'../images/cricket/cards/psl/header/2018.jpg',
 					  moreDetails:{
 						  images:[
 							  '../images/my.jpg',
@@ -50,10 +50,10 @@ var dataList = [{name:'The PSL',
 							  'adsfda'],
 						  scoreDefeat:'24/7',
 						  scoreWin:'12/24',
-						  matchHost:'quaidabad'}}
+						  matchHost:'Karachi'}}
 				 ]},
 				
-				{name:'The ICC',
+				{name:'ICC ODI WorldCup',
 				 seasons:[
 					 
 					 {name:'2015',

@@ -4,6 +4,7 @@
 	font-size: 1.6vw;
 	font-weight: bolder;
 	display: inline-block;
+	cursor: pointer;
 }
 
 .left-ul li div{
@@ -38,6 +39,7 @@
 .left-ul li ul li{
 	padding: 2px 15%;
 	margin: 1px -2% 1px 6%;
+	cursor: pointer;
 	font-size: 1.3vw;
 	animation: 1.4s fadeInLeft;
 	transition: 3s;
@@ -77,6 +79,7 @@
 	background-color: white;
 	padding: 8px 5px;
 	box-shadow: 0 4px 8px 0 #ccc;
+	border-radius: 5px;
 	overflow: hidden;
 }
 
@@ -123,10 +126,16 @@
 	transition: 3s all;
 	border: 1px solid #ccc;
 	border-radius: 8px;
-	margin: 0px 20px;
+	margin: 0px 30px;
+	overflow: hidden;
 }
 
 .right-view div a:hover{
 	transition: 1s all;
 	transform: scale(1.1);
+}
+
+.right-view div hr{
+	margin: 8px 0 0 0;
+	background-color: #E9E9E9;
 }

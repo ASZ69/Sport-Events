@@ -18,10 +18,10 @@ var dataList = [
 		 wiki:'www.wiki.com/psl',
 		 imgSrc:'../images/myimg.jpg',
 		 moreDetails:{
-			 images:{
-				 image1:'../images/my.jpg',
-			 	 image2:'asdasda',
-			 	 image3:'adsfda'},
+			 images:[
+				 '../images/my.jpg',
+			 	 'asdasda',
+			 	 'adsfda'],
 			 scoreDefeat:'24/7',
 			 scoreWin:'12/24',
 		 	 matchHost:'quaidabad'}},
@@ -29,10 +29,12 @@ var dataList = [
 			 wiki:'www.wiki.com/psl',
 			 imgSrc:'../images/myimg.jpg',
 			 moreDetails:{
-				 images:{
-					 image1:'../images/my.jpg',
-					 image2:'asdasda',
-					 image3:'adsfda'},
+				 images:[
+				 '../images/my.jpg',
+			 	 'asdasda',
+			 	 'e44',
+				 'jj11',
+				 'hhh22'],
 				 scoreDefeat:'24/7',
 				 scoreWin:'12/24',
 				 matchHost:'landhi'}},
@@ -40,10 +42,10 @@ var dataList = [
 		 wiki:'www.wiki.com/psl17',
 		 imgSrc:'../images/myimg17.jpg',
 		 moreDetails:{
-			 images:{
-				 image1:'../images/myfor3.jpg',
-			 	 image2:'axzxz',
-			 	 image3:'iii'},
+			 images:[
+				 '../images/my.jpg',
+			 	 'asdasda',
+			 	 'adsfda'],
 			 scoreDefeat:'69/7',
 			 scoreWin:'1/240',
 		 	 matchHost:'nadi kinare'}}

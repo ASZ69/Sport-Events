@@ -144,7 +144,11 @@
 					<h1>{{event.season}}</h1>
 					<h1>{{event.imgSrc}}</h1>
 					<h1>{{event.wiki}}</h1>
-					<h1>{{event.moreDetails.images.image1}}</h1>
+					
+					<div ng-repeat="img in event.moreDetails.images">
+						<h3>{{img}}</h3>
+					</div>
+					
 					<br><br><br><br>
 				</div>
 				

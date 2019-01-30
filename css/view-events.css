@@ -1,2 +1,26 @@
 /* CSS Document */
 
+.left-ul li h3{
+	font-size: 2.4vw;
+	display: inline-block;
+}
+
+.left-ul span {
+	font-size: 2vw;
+	cursor: pointer;
+	margin: 8px;
+}
+
+.left-ul li{
+	margin-left: -10%;
+}
+
+.left-ul-hidden-list{
+	height: 0px;
+	overflow: hidden;
+}
+
+.left-ul-show-list{
+	height: auto;
+	overflow: auto;
+}

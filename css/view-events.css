@@ -66,3 +66,67 @@
 	height: auto;
 	overflow: hidden;
 }
+
+.right-view {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.right-view > div{
+	width: 300px;
+	background-color: white;
+	padding: 8px 5px;
+	box-shadow: 0 4px 8px 0 #ccc;
+	overflow: hidden;
+}
+
+.right-view > div:hover{
+	box-shadow: 0 6px 12px 0 #383838;
+	cursor: pointer;
+}
+
+.cd-img-p img{
+	width: 100%;
+	height: auto;
+}
+
+.cd-img-p {
+	width: 100%;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.card-heading h3,.card-heading h4{
+	display: inline-block;
+	margin: 0;
+	padding: 5px 0;
+}
+
+.card-heading h4{
+	float: right;
+	font-size: 1.2vw;
+	padding-top: 7px;
+}
+
+.card-heading h3{
+	font-size: 1.7vw;
+}
+
+.card-heading {
+	padding: 1px 5px;
+}
+
+.right-view div a{
+	color: black;
+	text-decoration: none;
+	font-size: 1vw;
+	transition: 3s all;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	margin: 0px 20px;
+}
+
+.right-view div a:hover{
+	transition: 1s all;
+	transform: scale(1.1);
+}

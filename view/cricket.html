@@ -110,20 +110,22 @@
 							<h3 ng-click="showCat($event)">Pakistan Super League</h3>
 						</div>
 						<ul class="left-ul-show-list">
-							<li>PSL ONE</li>
-							<li>PSL TWO</li>
-							<li>PSL THREE</li>
+							<li>PSL 2016</li>
+							<li>PSL 2017</li>
+							<li>PSL 2018</li>
 						</ul>
 					</li>
 					<li>
 						<div>
 							<span class="fa fa-caret-down"></span>
-							<h3 ng-click="showCat($event)">The PSL</h3>
+							<h3 ng-click="showCat($event)">ICC ODI WorldCup</h3>
 						</div>
 						<ul class="left-ul-show-list">
-							<li>PSL ONE</li>
-							<li>PSL TWO</li>
-							<li>PSL THREE</li>
+							<li>ICC 1999</li>
+							<li>ICC 2003</li>
+							<li>ICC 2007</li>
+							<li>ICC 2011</li>
+							<li>ICC 2015</li>
 						</ul>
 					</li>
 					<li>
@@ -151,23 +153,40 @@
 				</ul>
 			</div>
 			
-			<div class="col-md-9 bg-info">
+			<div class="col-md-9">
 				
+<!--
 				<div ng-repeat="event in eventsArray">
 					<h1>{{event.name}}</h1>
-<!--					<h1>{{event.seasons}}</h1>-->
-					
 					<div ng-repeat="n in event.seasons">
 						<h4>{{n.name}}</h4>
 					</div>
-					
-<!--
-					<div ng-repeat="img in event.moreDetails.images">
-						<h3>{{img}}</h3>
-					</div>
+				</div>
 -->
+				<style>
 					
-					<br><br><br><br>
+				</style>
+<!--
+				
+				<div class="right-view">
+					<div ng-repeat="season in eventsArray.seasons">
+						<img src="{{season.imgSrc}}" alt="PIC">
+					</div>
+				</div>
+-->
+				<h2 class="text-center">Select Event</h2>
+				<div class="right-view mr-tb-15">
+					<div>
+						<span class="dis-none"></span>
+						<div class="cd-img-p">
+							<img src="../images/cricket/cards/psl/header/2016.jpg" alt="PIC">
+						</div>
+						<div class="card-heading">
+							<h3>PSL 2016</h3>
+							<h4>Dubai</h4>
+						</div>
+						<a href="" class="dis-blk text-center">Get more details on Wikipedia...</a>
+					</div>
 				</div>
 				
 			</div>

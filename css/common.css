@@ -1,4 +1,6 @@
 /* CSS Document */
+*{user-select: none;}
+
 .dis-none{
 	display: none;
 }
@@ -50,4 +52,8 @@
 
 ul{
 	list-style-type: none;
+}
+
+.dis-blk {
+	display: block;
 }

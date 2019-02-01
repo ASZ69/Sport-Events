@@ -255,52 +255,137 @@ var dataList = [{
 
         {
             name: 'Asia Cup 2000',
-            wiki: 'https://en.wikipedia.org/wiki/2016_Pakistan_Super_League',
-            imgSrc: '../images/cricket/cards/psl/header/2016.jpg',
+            wiki: 'https://en.wikipedia.org/wiki/2000_Asia_Cup',
+            imgSrc: '../images/cricket/cards/asia-cup/header/2000.jpg',
             moreDetails: {
                 images: [
                     '../images/my.jpg',
                     'asdasda',
                     'adsfda'],
-                scoreDefeat: '174/7 (20 overs)',
-                scoreWin: '175/4 (18.4 overs)',
-                matchHost: 'Dubai',
-                runnerUp: 'Quetta Gladiators',
-                winner: 'Islamabad United'
+                scoreDefeat: '238 (45.2 overs)',
+                scoreWin: '277/4 (50 overs)',
+                matchHost: 'Bangladesh',
+                runnerUp: 'Sri Lanka',
+                winner: 'Pakistan'
             }
         },
 
         {
-            name: 'PSL 2017',
-            wiki: 'https://en.wikipedia.org/wiki/2017_Pakistan_Super_League',
-            imgSrc: '../images/cricket/cards/psl/header/2017.jpg',
+            name: 'Asia Cup 2004',
+            wiki: 'https://en.wikipedia.org/wiki/2004_Asia_Cup',
+            imgSrc: '../images/cricket/cards/asia-cup/header/2004.jpg',
             moreDetails: {
                 images: [
                     '../images/my.jpg',
                     'asdasda',
                     'adsfda'],
-                scoreDefeat: '90 (16.3 Overs)',
+                scoreDefeat: '203/9 (50 overs)',
                 scoreWin: '148/6 (20 overs)',
-                matchHost: 'Lahore',
-                runnerUp: 'Quetta Gladiators',
-                winner: 'Peshawar Zalmi'
+                matchHost: 'Sri Lanka',
+                runnerUp: 'India',
+                winner: 'Sri Lanka'
             }
         },
 
         {
-            name: 'PSL 2018',
-            wiki: 'https://en.wikipedia.org/wiki/2018_Pakistan_Super_League',
-            imgSrc: '../images/cricket/cards/psl/header/2018.jpg',
+            name: 'Asia Cup 2008',
+            wiki: 'https://en.wikipedia.org/wiki/2008_Asia_Cup',
+            imgSrc: '../images/cricket/cards/asia-cup/header/2008.jpg',
             moreDetails: {
                 images: [
                     '../images/my.jpg',
                     'asdasda',
                     'adsfda'],
-                scoreDefeat: '148/9 (20 overs)',
-                scoreWin: '154/7 (16.5 overs)',
-                matchHost: 'Karachi',
-                runnerUp: 'Peshawar Zalmi',
-                winner: 'Islamabad United'
+                scoreDefeat: '173 (39.3 overs)',
+                scoreWin: '273 (49.5 overs)',
+                matchHost: 'Pakistan',
+                runnerUp: 'India',
+                winner: 'Sri Lanka'
+            }
+        },
+
+        {
+            name: 'Asia Cup 2010',
+            wiki: 'https://en.wikipedia.org/wiki/2010_Asia_Cup',
+            imgSrc: '../images/cricket/cards/asia-cup/header/2010.jpg',
+            moreDetails: {
+                images: [
+                    '../images/my.jpg',
+                    'asdasda',
+                    'adsfda'],
+                scoreDefeat: '187 (44.4 overs)',
+                scoreWin: '268/6 (50 overs)',
+                matchHost: 'Sri Lanka',
+                runnerUp: 'Sri Lanka',
+                winner: 'India'
+            }
+        },
+
+        {
+            name: 'Asia Cup 2012',
+            wiki: 'https://en.wikipedia.org/wiki/2012_Asia_Cup',
+            imgSrc: '../images/cricket/cards/asia-cup/header/2012.jpg',
+            moreDetails: {
+                images: [
+                    '../images/my.jpg',
+                    'asdasda',
+                    'adsfda'],
+                scoreDefeat: '234/8 (50 overs)',
+                scoreWin: '236/9 (50 overs)',
+                matchHost: 'Bangladesh',
+                runnerUp: 'Bangladesh',
+                winner: 'Pakistan'
+            }
+        },
+
+        {
+            name: 'Asia Cup 2014',
+            wiki: 'https://en.wikipedia.org/wiki/2014_Asia_Cup',
+            imgSrc: '../images/cricket/cards/asia-cup/header/2014.jpg',
+            moreDetails: {
+                images: [
+                    '../images/my.jpg',
+                    'asdasda',
+                    'adsfda'],
+                scoreDefeat: '260/5 (50 overs)',
+                scoreWin: '261/5 (46.2 overs)',
+                matchHost: 'Bangladesh',
+                runnerUp: 'Pakistan',
+                winner: 'Sri Lanka'
+            }
+        },
+
+        {
+            name: 'Asia Cup 2016',
+            wiki: 'https://en.wikipedia.org/wiki/2016_Asia_Cup',
+            imgSrc: '../images/cricket/cards/asia-cup/header/2016.jpg',
+            moreDetails: {
+                images: [
+                    '../images/my.jpg',
+                    'asdasda',
+                    'adsfda'],
+                scoreDefeat: '120/5 (15 overs)',
+                scoreWin: '122/2 (13.5 overs)',
+                matchHost: 'Bangladesh',
+                runnerUp: 'Bangladesh',
+                winner: 'India'
+            }
+        },
+
+        {
+            name: 'Asia Cup 2018',
+            wiki: 'https://en.wikipedia.org/wiki/2018_Asia_Cup',
+            imgSrc: '../images/cricket/cards/asia-cup/header/2018.jpg',
+            moreDetails: {
+                images: [
+                    '../images/my.jpg',
+                    'asdasda',
+                    'adsfda'],
+                scoreDefeat: '222 (48.3 overs)',
+                scoreWin: '223/7 (50 overs)',
+                matchHost: 'United Arab Emirates',
+                runnerUp: 'Bangladesh',
+                winner: 'India'
             }
         }
     ]

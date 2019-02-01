@@ -102,47 +102,53 @@
 		<div class="row">
 			
 			<div class="col-md-3">
-				<br>
-				<ul class="left-ul">
-					<li ng-repeat="league in categoryArray">
-						<div>
-							<span class="fa fa-caret-down"></span>
-							<h3 ng-click="showCat($event)">{{league.name}}</h3>
-						</div>
-						<ul class="left-ul-show-list">
-							<li ng-repeat="seasons in league.seasons">{{seasons.name}}</li>
-						</ul>
-					</li>
-				</ul>
+				<div class="scroll-container">
+                    <br>
+                    <ul class="left-ul">
+                        <li ng-repeat="league in categoryArray">
+                            <div>
+                                <span class="fa fa-caret-down"></span>
+                                <h3 ng-click="showCat($event)">{{league.name}}</h3>
+                            </div>
+                            <ul class="left-ul-show-list">
+                                <li ng-repeat="seasons in league.seasons">{{seasons.name}}</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
 			</div>
 			
 			<div class="col-md-9">
 				
-				<h2 class="text-center">Select Event</h2>
-				<div class="right-view" ng-repeat="event in eventsArray">
-					<div ng-repeat="season in event.seasons" class="mr-lr-5 mr-tb-5">
-						<span class="dis-none"></span>
-						<div class="cd-img-p">
-							<img src="{{season.imgSrc}}" alt="PIC">
-						</div>
-						<hr>
-						<div class="card-heading">
-							<h3>{{season.name}}</h3>
-							<h4>{{season.moreDetails.winner}}</h4>
-						</div>
-						<a class="dis-blk text-center">View more...</a>
-						<a href="{{season.wiki}}" target="new" class="dis-blk text-center mr-t-2">
-							Get more details on Wikipedia...
-						</a>
-					</div>
-				</div>
+                <div class="scroll-container">
+
+                    <h2 class="text-center mr-tb-5">{{eventsArray[0].name}}</h2>
+
+                    <div class="right-view">
+                        <div ng-repeat="season in eventsArray[0].seasons" class="mr-lr-5 mr-tb-5">
+                            <span class="dis-none"></span>
+                            <div class="cd-img-p">
+                                <img src="{{season.imgSrc}}" alt="PIC">
+                            </div>
+                            <hr>
+                            <div class="card-heading">
+                                <h3>{{season.name}}</h3>
+                                <h4>{{season.moreDetails.winner}}</h4>
+                            </div>
+                            <a class="dis-blk text-center">View more...</a>
+                            <a href="{{season.wiki}}" target="new" class="dis-blk text-center mr-t-2">
+                                Get more details on Wikipedia...
+                            </a>
+                        </div>
+                    </div>
+                </div>
 				
 			</div>
 		</div>
 	</div>
 	
 	<!--    footer start-->
-	<div class="footer-div">
+	<div class="footer-div" style="line-height:30px;">
 		<footer>Copyright <b>SPORTS EVENTS</b> 2019 &copy; - All Rights Reserved</footer>
 	</div>
 	<!--    footer end-->

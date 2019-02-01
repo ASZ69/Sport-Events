@@ -139,3 +139,9 @@
 	margin: 8px 0 0 0;
 	background-color: #E9E9E9;
 }
+
+.scroll-container {
+/*    position: absolute;*/
+    height: calc(100vh - 86px);
+    overflow: auto;
+}

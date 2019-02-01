@@ -15,6 +15,11 @@ $(document).ready(function(){
 			$ul.removeClass('left-ul-show-list');
 			$ul.addClass('left-ul-hidden-list');
 		}
-	});
+    });
 	
 });
+
+function goToBack() {
+    $(".right-view").css("display", "flex");
+    $(".right-page").css("display", "none");
+}

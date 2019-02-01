@@ -108,7 +108,7 @@
                         <li ng-repeat="league in categoryArray">
                             <div>
                                 <span class="fa fa-caret-down"></span>
-                                <h3 ng-click="showCat($event)">{{league.name}}</h3>
+                                <h3 ng-click="showCat($event)" onclick="goToBack()">{{league.name}}</h3>
                             </div>
                             <ul class="left-ul-show-list">
                                 <li ng-repeat="seasons in league.seasons">{{seasons.name}}</li>
@@ -121,7 +121,6 @@
 			<div class="col-md-9">
 				
                 <div class="scroll-container">
-
                     <h2 class="text-center mr-tb-5">{{eventsArray[0].name}}</h2>
 
                     <div class="right-view">
@@ -135,14 +134,21 @@
                                 <h3>{{season.name}}</h3>
                                 <h4>{{season.moreDetails.winner}}</h4>
                             </div>
-                            <a class="dis-blk text-center">View more...</a>
+                            <a class="dis-blk text-center" ng-click="viewMore($event)">View more...</a>
                             <a href="{{season.wiki}}" target="new" class="dis-blk text-center mr-t-2">
                                 Get more details on Wikipedia...
                             </a>
                         </div>
                     </div>
+
+                    <div class="right-page pd-5">
+                        <button onclick="goToBack()" class="btn btn-outline-dark">Go Back</button>
+
+
+
+                    </div>
+
                 </div>
-				
 			</div>
 		</div>
 	</div>

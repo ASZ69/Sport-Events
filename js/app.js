@@ -9,7 +9,17 @@ events.controller("categoriesControl",function($scope,$filter){
 		
 		$scope.eventsArray = $filter('filter')(dataList, {name: category});
 	};
-	
+
+    $scope.viewMore = function (event) {
+        var clickedRefer = event.currentTarget;
+        var sessionName = clickedRefer.parentElement.getElementsByTagName("h3")[0].innerHTML;
+
+        $(".right-view").css("display", "none");
+        $(".right-page").css("display", "block");
+
+        $scope.moreDetailsArray = $filter('filter')($scope.eventsArray[0].seasons, { name: sessionName});
+    };
+
 	$scope.eventsArray = $filter('filter')(dataList, {name: 'ICC ODI WorldCup'});
 	
 	$scope.categoryArray = dataList;

@@ -1,13 +1,8 @@
 /* CSS Document */
 *{user-select: none;}
 
-
-
-
-
-
 .dis-none{
-	display: none;
+	display: none !important;
 }
 
 .mr-tb-15 {
@@ -75,4 +70,8 @@ ul{
 .mr-tb-5 {
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+
+.pd-5 {
+    padding: 5px;
 }

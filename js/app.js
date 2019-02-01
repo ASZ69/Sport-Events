@@ -446,6 +446,114 @@ var dataList = [{
             }
         }
     ]
+},
+
+{
+    name: 'Indian Premier League',
+    seasons: [
+
+        {
+            name: 'IPL 2013',
+            wiki: 'https://en.wikipedia.org/wiki/2013_Indian_Premier_League',
+            imgSrc: '../images/cricket/cards/ipl/header/2013.jpg',
+            moreDetails: {
+                images: [
+                    '../images/my.jpg',
+                    'asdasda',
+                    'adsfda'],
+                scoreDefeat: '125/9 (20 overs)',
+                scoreWin: '148/9 (20 overs)',
+                matchHost: 'Eden Gardens, Kolkata',
+                runnerUp: 'Chennai Super Kings',
+                winner: 'Mumbai Indians'
+            }
+        },
+
+        {
+            name: 'IPL 2014',
+            wiki: 'https://en.wikipedia.org/wiki/2014_Indian_Premier_League',
+            imgSrc: '../images/cricket/cards/ipl/header/2014.jpg',
+            moreDetails: {
+                images: [
+                    '../images/my.jpg',
+                    'asdasda',
+                    'adsfda'],
+                scoreDefeat: '199/4 (20 overs)',
+                scoreWin: '200/7 (19.3 overs)',
+                matchHost: 'M. Chinnaswamy Stadium, Bengaluru',
+                runnerUp: 'Kings XI Punjab',
+                winner: 'Kolkata Knight Riders'
+            }
+        },
+
+        {
+            name: 'IPL 2015',
+            wiki: 'https://en.wikipedia.org/wiki/2015_Indian_Premier_League',
+            imgSrc: '../images/cricket/cards/ipl/header/2015.jpg',
+            moreDetails: {
+                images: [
+                    '../images/my.jpg',
+                    'asdasda',
+                    'adsfda'],
+                scoreDefeat: '161/8 (20 overs)',
+                scoreWin: '202/5 (20 overs)',
+                matchHost: 'Eden Gardens, Kolkata',
+                runnerUp: 'Chennai Super Kings',
+                winner: 'Mumbai Indians'
+            }
+        },
+
+        {
+            name: 'IPL 2016',
+            wiki: 'https://en.wikipedia.org/wiki/2016_Indian_Premier_League',
+            imgSrc: '../images/cricket/cards/ipl/header/2016.jpg',
+            moreDetails: {
+                images: [
+                    '../images/my.jpg',
+                    'asdasda',
+                    'adsfda'],
+                scoreDefeat: '200/7 (20 overs)',
+                scoreWin: '208/7 (20 overs)',
+                matchHost: 'M. Chinnaswamy Stadium, Bengaluru',
+                runnerUp: 'Royal Challengers Bangalore',
+                winner: 'Sunrisers Hyderabad'
+            }
+        },
+
+        {
+            name: 'IPL 2017',
+            wiki: 'https://en.wikipedia.org/wiki/2017_Indian_Premier_League',
+            imgSrc: '../images/cricket/cards/ipl/header/2017.jpg',
+            moreDetails: {
+                images: [
+                    '../images/my.jpg',
+                    'asdasda',
+                    'adsfda'],
+                scoreDefeat: '128/6 (20 overs)',
+                scoreWin: '129/8 (20 overs)',
+                matchHost: 'Rajiv Gandhi International Cricket Stadium, Hyderabad',
+                runnerUp: 'Rising Pune Supergiant',
+                winner: 'Mumbai Indians'
+            }
+        },
+
+        {
+            name: 'IPL 2018',
+            wiki: 'https://en.wikipedia.org/wiki/2018_Indian_Premier_League',
+            imgSrc: '../images/cricket/cards/ipl/header/2018.jpg',
+            moreDetails: {
+                images: [
+                    '../images/my.jpg',
+                    'asdasda',
+                    'adsfda'],
+                scoreDefeat: '178/6 (20 overs)',
+                scoreWin: '181/2 (18.3 overs)',
+                matchHost: 'Wankhede Stadium, Mumbai',
+                runnerUp: 'Sunrisers Hyderabad',
+                winner: 'Chennai Super Kings'
+            }
+        }
+    ]
 }
 
 ];

@@ -215,7 +215,7 @@ var dataList = [{
 
         {
             name: 'ICC 2014',
-            wiki: 'https://en.wikipedia.org/wiki/2007_Cricket_World_Cup_Final',
+            wiki: 'https://en.wikipedia.org/wiki/2014_ICC_World_Twenty20',
             imgSrc: '../images/cricket/cards/icc-t20/header/2014.jpg',
             moreDetails: {
                 images: [
@@ -232,7 +232,7 @@ var dataList = [{
 
         {
             name: 'ICC 2016',
-            wiki: 'https://en.wikipedia.org/wiki/2011_Cricket_World_Cup_Final',
+            wiki: 'https://en.wikipedia.org/wiki/2016_ICC_World_Twenty20',
             imgSrc: '../images/cricket/cards/icc-t20/header/2016.jpg',
             moreDetails: {
                 images: [
@@ -244,6 +244,63 @@ var dataList = [{
                 matchHost: 'India',
                 runnerUp: 'England',
                 winner: 'West Indies'
+            }
+        }
+    ]
+},
+
+{
+    name: 'Asia Cup',
+    seasons: [
+
+        {
+            name: 'Asia Cup 2000',
+            wiki: 'https://en.wikipedia.org/wiki/2016_Pakistan_Super_League',
+            imgSrc: '../images/cricket/cards/psl/header/2016.jpg',
+            moreDetails: {
+                images: [
+                    '../images/my.jpg',
+                    'asdasda',
+                    'adsfda'],
+                scoreDefeat: '174/7 (20 overs)',
+                scoreWin: '175/4 (18.4 overs)',
+                matchHost: 'Dubai',
+                runnerUp: 'Quetta Gladiators',
+                winner: 'Islamabad United'
+            }
+        },
+
+        {
+            name: 'PSL 2017',
+            wiki: 'https://en.wikipedia.org/wiki/2017_Pakistan_Super_League',
+            imgSrc: '../images/cricket/cards/psl/header/2017.jpg',
+            moreDetails: {
+                images: [
+                    '../images/my.jpg',
+                    'asdasda',
+                    'adsfda'],
+                scoreDefeat: '90 (16.3 Overs)',
+                scoreWin: '148/6 (20 overs)',
+                matchHost: 'Lahore',
+                runnerUp: 'Quetta Gladiators',
+                winner: 'Peshawar Zalmi'
+            }
+        },
+
+        {
+            name: 'PSL 2018',
+            wiki: 'https://en.wikipedia.org/wiki/2018_Pakistan_Super_League',
+            imgSrc: '../images/cricket/cards/psl/header/2018.jpg',
+            moreDetails: {
+                images: [
+                    '../images/my.jpg',
+                    'asdasda',
+                    'adsfda'],
+                scoreDefeat: '148/9 (20 overs)',
+                scoreWin: '154/7 (16.5 overs)',
+                matchHost: 'Karachi',
+                runnerUp: 'Peshawar Zalmi',
+                winner: 'Islamabad United'
             }
         }
     ]
@@ -262,9 +319,11 @@ var dataList = [{
                     '../images/my.jpg',
                     'asdasda',
                     'adsfda'],
-                scoreDefeat: '24/7',
-                scoreWin: '12/24',
-                matchHost: 'Dubai'
+                scoreDefeat: '174/7 (20 overs)',
+                scoreWin: '175/4 (18.4 overs)',
+                matchHost: 'Dubai',
+                runnerUp: 'Quetta Gladiators',
+                winner: 'Islamabad United'
             }
         },
 
@@ -277,9 +336,11 @@ var dataList = [{
                     '../images/my.jpg',
                     'asdasda',
                     'adsfda'],
-                scoreDefeat: '24/7',
-                scoreWin: '12/24',
-                matchHost: 'Lahore'
+                scoreDefeat: '90 (16.3 Overs)',
+                scoreWin: '148/6 (20 overs)',
+                matchHost: 'Lahore',
+                runnerUp: 'Quetta Gladiators',
+                winner: 'Peshawar Zalmi'
             }
         },
 
@@ -292,9 +353,11 @@ var dataList = [{
                     '../images/my.jpg',
                     'asdasda',
                     'adsfda'],
-                scoreDefeat: '24/7',
-                scoreWin: '12/24',
-                matchHost: 'Karachi'
+                scoreDefeat: '148/9 (20 overs)',
+                scoreWin: '154/7 (16.5 overs)',
+                matchHost: 'Karachi',
+                runnerUp: 'Peshawar Zalmi',
+                winner: 'Islamabad United'
             }
         }
     ]

@@ -22,4 +22,5 @@ $(document).ready(function(){
 function goToBack() {
     $(".right-view").css("display", "flex");
     $(".right-page").css("display", "none");
+    $(".scroll-container h2").removeClass("mr-r-30p");
 }

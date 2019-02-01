@@ -151,6 +151,22 @@
     }
 }
 
-.right-page button{
+/*.right-page button{
     margin-top: -70px;
+}*/
+
+.right-page h3 {
+    transition: 2s all;
+    margin-right: 35%;
+    float: right;
+    margin-top: -45px;
+}
+
+@keyframes top-to-down-margin{
+    from{
+        margin-top:-400px;
+    }
+    to{
+        margin-top:-45px;
+    }
 }

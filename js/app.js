@@ -16,6 +16,8 @@ events.controller("categoriesControl",function($scope,$filter){
 
         $(".right-view").css("display", "none");
         $(".right-page").css("display", "block");
+        $(".scroll-container h2").addClass("mr-r-30p");
+        $(".right-page h3").css("animation","2s top-to-down-margin");
 
         $scope.moreDetailsArray = $filter('filter')($scope.eventsArray[0].seasons, { name: sessionName});
     };
@@ -36,9 +38,11 @@ var dataList = [{
             imgSrc: '../images/cricket/cards/icc/header/1992.jpg',
             moreDetails: {
                 images: [
-                    '../images/my.jpg',
-                    'asdasda',
-                    'adsfda'],
+                    '../images/cricket/cards/icc/header/1992.jpg',
+                    '../images/cricket/cards/icc/header/1996.jpg',
+                    '../images/cricket/cards/icc/header/1999.jpg',
+                    '../images/cricket/cards/icc/header/2003.jpg',
+                    '../images/cricket/cards/icc/header/2007.jpg'],
                 scoreDefeat: '227 all out (49.2 overs)',
                 scoreWin: '249/6 (50 overs)',
                 matchHost: 'Australia',

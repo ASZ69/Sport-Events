@@ -187,31 +187,35 @@
                         <hr />
 
                         <div class="row compare-score">
-                            <div class="col-sm-6" style="border-right: 2px solid #ccc">
+                            <div class="col-sm-6 border-r">
 
                                 <h4 class="text-center">Winner</h4>
+								<br>
                                 <div class="flag-p">
                                     <img src="../images/flags/{{moreDetailsArray[0].moreDetails.winner}}/flag.jpg" alt="Image" width="100%" height="auto">
                                 </div>
+								<br>
                                 <h4 class="text-center">
                                     {{moreDetailsArray[0].moreDetails.winner}}
                                 </h4>
-								
+								<br>
                                 <h1 class="text-center">
                                     {{moreDetailsArray[0].moreDetails.scoreWin}}
                                 </h1>
 
                             </div>
-                            <div class="col-sm-6" style="border-left: 2px solid #ccc">
+                            <div class="col-sm-6 border-l">
 
                                 <h4 class="text-center">Runner Up</h4>
+								<br>
                                 <div class="flag-p">
                                     <img src="../images/flags/{{moreDetailsArray[0].moreDetails.runnerUp}}/flag.jpg" alt="Image" width="100%" height="auto">
                                 </div>
+								<br>
                                 <h4 class="text-center">
                                     {{moreDetailsArray[0].moreDetails.runnerUp}}
                                 </h4>
-
+								<br>
                                 <h1 class="text-center">
                                     {{moreDetailsArray[0].moreDetails.scoreDefeat}}
                                 </h1>
@@ -220,24 +224,41 @@
                         </div>
 						
 						<br>
-                        <hr />
+                        <hr>
 						<br>
 
-                        <div class="container-fluid">
+                        <div class="container-fluid compare-details">
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-sm-6 border-r">
 									<h1 class="text-center">Match Was Hosted By {{moreDetailsArray[0].moreDetails.matchHost}}</h1>
+									<br>
 									<div class="flag-p">
 										<img src="../images/flags/{{moreDetailsArray[0].moreDetails.matchHost}}/flag.jpg" alt="Image" width="100%" height="auto">
 									</div>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-6 border-l">
 									<h1 class="text-center">Match Details</h1>
+									<br>
 									<div>
 										{{moreDetailsArray[0].moreDetails.text}}
 									</div>
 								</div>
 							</div>
+							
+							<span id="vidData" class="dis-none">
+								{{moreDetailsArray[0].moreDetails.vid}}
+							</span>
+							
+							<br>
+							<hr>
+							<br>
+							
+							<h1 class="text-center">See Highlights</h1>
+							
+							<center>
+								<iframe id="frame" width="80%" height="400" src="." frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</center>
+							
 						</div>
 						
                     </div>

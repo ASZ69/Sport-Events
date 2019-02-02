@@ -20,6 +20,14 @@ events.controller("categoriesControl",function($scope,$filter){
         $(".right-page h3").css("animation","2s top-to-down-margin");
 
         $scope.moreDetailsArray = $filter('filter')($scope.eventsArray[0].seasons, { name: sessionName});
+		$("#frame").hide();
+		
+		setTimeout(function(){
+			var data = $("#vidData").html().trim();
+			$("#frame").attr("src",data);
+			$("#frame").show();
+		},1000);
+		
     };
 
 	$scope.eventsArray = $filter('filter')(dataList, {name: 'ICC ODI WorldCup'});
@@ -47,7 +55,8 @@ var dataList = [{
                 matchHost: 'Australia',
                 runnerUp: 'England',
                 winner: 'Pakistan',
-				text:'The final of the 1992 ICC Cricket World Cup was played at the Melbourne Cricket Ground, Melbourne on 25 March 1992. The match was won by Pakistan under their captain Imran Khan who defeated England by 22 runs to lift their first ever World Cup trophy. This was the second Cricket World Cup final to be played outside England and the first in Australia. 87,182 spectators turned out to see the final and the stadium was fully packed during the match.'
+				text:'The final of the 1992 ICC Cricket World Cup was played at the Melbourne Cricket Ground, Melbourne on 25 March 1992. The match was won by Pakistan under their captain Imran Khan who defeated England by 22 runs to lift their first ever World Cup trophy. This was the second Cricket World Cup final to be played outside England and the first in Australia. 87,182 spectators turned out to see the final and the stadium was fully packed during the match.',
+				vid:'https://www.youtube.com/embed/1Ch8KI_GMGw?rel=0&amp;showinfo=0&amp;enablejsapi=1'
             }
         },
 

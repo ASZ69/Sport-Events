@@ -214,3 +214,7 @@
 .border-l {
 	border-left: 1px solid #ccc;
 }
+
+.compare-details img, .compare-score img{
+	border: 1px solid #797979;
+}

@@ -151,7 +151,7 @@
     }
 }
 
-.right-page{
+.right-page {
     display: none;
 }
 
@@ -169,4 +169,22 @@
     to{
         margin-top:-45px;
     }
+}
+
+#slider{
+    width:80%;
+    margin: auto;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+#slider img{
+    width: 100%;
+    height:auto;
+}
+
+.go-back{
+    margin-top: -50px;
+    margin-left: 0px;
+    font-size: 1vw;
 }

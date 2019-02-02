@@ -159,14 +159,11 @@
 
                             <!-- The slideshow -->
                             <div class="carousel-inner">
-                                <div class="carousel-item" ng-repeat="src in moreDetailsArray[0].moreDetails.images">
-                                    <img src="../images/cricket/cards/icc/header/1992.jpg" alt="Images">\
+                                <div class="carousel-item active">
+                                    <img src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1024px" height="507px"><text x="50%" y="50%" fill="red">{{moreDetailsArray[0].name}}</text></svg>' />
                                 </div>
                                 <div class="carousel-item" ng-repeat="src in moreDetailsArray[0].moreDetails.images">
-                                    <img src="../images/cricket/cards/icc/header/1992.jpg" alt="Images">\
-                                </div>
-                                <div class="carousel-item" ng-repeat="src in moreDetailsArray[0].moreDetails.images">
-                                    <img src="../images/cricket/cards/icc/header/1992.jpg" alt="Images">\
+                                    <img src="{{src}}" alt="Images">
                                 </div>
                             </div>
 

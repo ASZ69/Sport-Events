@@ -151,9 +151,9 @@
     }
 }
 
-/*.right-page button{
-    margin-top: -70px;
-}*/
+.right-page{
+    display: none;
+}
 
 .right-page h3 {
     transition: 2s all;

@@ -188,3 +188,13 @@
     margin-left: 0px;
     font-size: 1vw;
 }
+
+.compare-score {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.flag-p{
+	width: 80%;
+	height: auto;
+	margin: auto;
+}

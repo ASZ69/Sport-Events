@@ -184,8 +184,62 @@
                             </a>
                         </div>
 
+                        <hr />
 
+                        <div class="row compare-score">
+                            <div class="col-sm-6" style="border-right: 2px solid #ccc">
 
+                                <h4 class="text-center">Winner</h4>
+                                <div class="flag-p">
+                                    <img src="../images/flags/{{moreDetailsArray[0].moreDetails.winner}}/flag.jpg" alt="Image" width="100%" height="auto">
+                                </div>
+                                <h4 class="text-center">
+                                    {{moreDetailsArray[0].moreDetails.winner}}
+                                </h4>
+								
+                                <h1 class="text-center">
+                                    {{moreDetailsArray[0].moreDetails.scoreWin}}
+                                </h1>
+
+                            </div>
+                            <div class="col-sm-6" style="border-left: 2px solid #ccc">
+
+                                <h4 class="text-center">Runner Up</h4>
+                                <div class="flag-p">
+                                    <img src="../images/flags/{{moreDetailsArray[0].moreDetails.runnerUp}}/flag.jpg" alt="Image" width="100%" height="auto">
+                                </div>
+                                <h4 class="text-center">
+                                    {{moreDetailsArray[0].moreDetails.runnerUp}}
+                                </h4>
+
+                                <h1 class="text-center">
+                                    {{moreDetailsArray[0].moreDetails.scoreDefeat}}
+                                </h1>
+
+                            </div>
+                        </div>
+						
+						<br>
+                        <hr />
+						<br>
+
+                        <div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-6">
+									<h1 class="text-center">Match Was Hosted By {{moreDetailsArray[0].moreDetails.matchHost}}</h1>
+									<div class="flag-p">
+										<img src="../images/flags/{{moreDetailsArray[0].moreDetails.matchHost}}/flag.jpg" alt="Image" width="100%" height="auto">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<h1 class="text-center">Match Details</h1>
+									<div>
+										{{moreDetailsArray[0].moreDetails.text}}
+									</div>
+								</div>
+							</div>
+						</div>
+						
                     </div>
 
                 </div>

@@ -46,7 +46,8 @@ var dataList = [{
                 scoreWin: '249/6 (50 overs)',
                 matchHost: 'Australia',
                 runnerUp: 'England',
-                winner: 'Pakistan'
+                winner: 'Pakistan',
+				text:'The final of the 1992 ICC Cricket World Cup was played at the Melbourne Cricket Ground, Melbourne on 25 March 1992. The match was won by Pakistan under their captain Imran Khan who defeated England by 22 runs to lift their first ever World Cup trophy. This was the second Cricket World Cup final to be played outside England and the first in Australia. 87,182 spectators turned out to see the final and the stadium was fully packed during the match.'
             }
         },
 

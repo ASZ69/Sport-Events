@@ -111,7 +111,7 @@
                                 <h3 ng-click="showCat($event)" onclick="goToBack()">{{league.name}}</h3>
                             </div>
                             <ul class="left-ul-show-list">
-                                <li ng-repeat="seasons in league.seasons">{{seasons.name}}</li>
+                                <li ng-repeat="seasons in league.seasons" ng-click="viewSubCategory($event)">{{seasons.name}}</li>
                             </ul>
                         </li>
                     </ul>

@@ -30,6 +30,28 @@ events.controller("categoriesControl",function($scope,$filter){
 		
     };
 
+    $scope.viewSubCategory = function (event) {
+        var clickedRefer = event.currentTarget;
+        var sessionName = clickedRefer.innerHTML;
+		
+		var leagueName = clickedRefer.parentElement.parentElement.getElementsByTagName("h3")[0].innerHTML;
+		$scope.eventsArray = $filter('filter')(dataList, {name: leagueName});
+		
+        $(".right-view").css("display", "none");
+        $(".right-page").css("display", "block");
+        $(".scroll-container h2").addClass("mr-r-30p");
+        $(".right-page h3").css("animation", "2s top-to-down-margin");
+
+        $scope.moreDetailsArray = $filter('filter')($scope.eventsArray[0].seasons, { name: sessionName });
+        $("#frame").hide();
+
+        setTimeout(function () {
+            var data = $("#vidData").html().trim();
+            $("#frame").attr("src", data);
+            $("#frame").show();
+        }, 1000);
+    };
+
 	$scope.eventsArray = $filter('filter')(dataList, {name: 'ICC ODI WorldCup'});
 	
 	$scope.categoryArray = dataList;

@@ -97,8 +97,8 @@ var dataList = [{
                 matchHost: 'Pakistan',
                 runnerUp: 'Australia',
                 winner: 'Sri Lanka',
-                text: '',
-                vid: ''
+                text: 'The 1996 Cricket World Cup, also called the Wills World Cup 1996 after its official sponsors, ITC Wills brand, was the sixth Cricket World Cup, organised by the International Cricket Council (ICC). It was the second World Cup to be hosted by Pakistan and India, and for the first time by Sri Lanka. The tournament was won by Sri Lanka, who defeated Australia in the final at the Gaddafi Stadium in Lahore, Punjab.',
+                vid: 'https://www.youtube.com/embed/EIzi_WSzlbk'
             }
         },
 
@@ -117,8 +117,8 @@ var dataList = [{
                 matchHost: 'England',
                 runnerUp: 'Pakistan',
                 winner: 'Australia',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/SwYcATVdSLU'
             }
         },
 
@@ -137,8 +137,8 @@ var dataList = [{
                 matchHost: 'South Africa',
                 runnerUp: 'India',
                 winner: 'Australia',
-                text: '',
-                vid: ''
+                text: 'The 2003 Cricket World Cup (known officially as ICC Cricket World Cup 2003) was the eighth Cricket World Cup, organized by the International Cricket Council (ICC). It was co-hosted by South Africa, Zimbabwe and Kenya from 9 February to 23 March 2003. This edition of the World Cup was the first to be played in Africa.',
+                vid: 'https://www.youtube.com/embed/Gna1hlFfAGk'
             }
         },
 
@@ -157,8 +157,8 @@ var dataList = [{
                 matchHost: 'West Indies',
                 runnerUp: 'Sri Lanka',
                 winner: 'Australia',
-                text: '',
-                vid: ''
+                text: 'The 2007 Cricket World Cup (officially known as ICC Cricket World Cup 2007) was the 9th edition of the Cricket World Cup tournament that took place in the West Indies from 13 March to 28 April 2007, using the sports One Day International (ODI) format. There were a total of 51 matches played, three fewer than at the 2003 World Cup (despite a field larger by two teams).',
+                vid: 'https://www.youtube.com/embed/Mlxamzg25Uo'
             }
         },
 
@@ -177,8 +177,8 @@ var dataList = [{
                 matchHost: 'India',
                 runnerUp: 'Sri Lanka',
                 winner: 'India',
-                text: '',
-                vid: ''
+                text: 'The 2011 ICC Cricket World Cup (officially known as ICC Cricket World Cup 2011) was the tenth Cricket World Cup. It was played in India, Sri Lanka, and (for the first time) Bangladesh. India won the tournament, defeating Sri Lanka by 6 wickets in the final at Wankhede Stadium in Mumbai, thus becoming the first country to win the Cricket World Cup final on home soil.[1][2] Indias Yuvraj Singh was declared the man of the tournament.[3] This was the first time in World Cup history that two Asian teams had appeared in the final. It was also the first time since the 1992 World Cup that the final match did not feature Australia.',
+                vid: 'https://www.youtube.com/embed/tx6eSSpPMLE'
             }
         },
 
@@ -197,8 +197,8 @@ var dataList = [{
                 matchHost: 'Australia',
                 runnerUp: 'New Zealand',
                 winner: 'Australia',
-                text: '',
-                vid: ''
+                text: 'The 2015 Cricket World Cup (officially known as ICC Cricket World Cup 2015) was the 11th Cricket World Cup, jointly hosted by Australia and New Zealand from 14 February to 29 March 2015. Australia defeated New Zealand by 7 wickets to win their fifth ICC Cricket World Cup. Fourteen teams played 49 matches in 14 venues, with Australia staging 26 games at grounds in Adelaide, Brisbane, Canberra, Hobart, Melbourne, Perth and Sydney while New Zealand hosted 23 games in Auckland, Christchurch, Dunedin, Hamilton, Napier, Nelson and Wellington.',
+                vid: 'https://www.youtube.com/embed/8hYSM_KEoHQ'
             }
         }
     ]
@@ -223,8 +223,8 @@ var dataList = [{
                 matchHost: 'South Africa',
                 runnerUp: 'Pakistan',
                 winner: 'India',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/3GjxUn5rN0g'
             }
         },
 
@@ -243,8 +243,8 @@ var dataList = [{
                 matchHost: 'England',
                 runnerUp: 'Sri Lanka',
                 winner: 'Pakistan',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/VEHidPoEyJw'
             }
         },
 
@@ -263,8 +263,8 @@ var dataList = [{
                 matchHost: 'West Indies',
                 runnerUp: 'Australia',
                 winner: 'England',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/0SW41BvG24A'
             }
         },
 
@@ -283,8 +283,8 @@ var dataList = [{
                 matchHost: 'Sri Lanka',
                 runnerUp: 'Sri Lanka',
                 winner: 'West Indies',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/btzs3dy8cAM'
             }
         },
 
@@ -303,8 +303,8 @@ var dataList = [{
                 matchHost: 'Bangladesh',
                 runnerUp: 'India',
                 winner: 'Sri Lanka',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/5VbZJ7-H5UA'
             }
         },
 
@@ -323,8 +323,8 @@ var dataList = [{
                 matchHost: 'India',
                 runnerUp: 'England',
                 winner: 'West Indies',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/5VbZJ7-H5UA'
             }
         }
     ]
@@ -349,8 +349,8 @@ var dataList = [{
                 matchHost: 'Bangladesh',
                 runnerUp: 'Sri Lanka',
                 winner: 'Pakistan',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/1Ql8h4zRpUE'
             }
         },
 
@@ -369,8 +369,8 @@ var dataList = [{
                 matchHost: 'Sri Lanka',
                 runnerUp: 'India',
                 winner: 'Sri Lanka',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/_VqWYoa6eyQ'
             }
         },
 
@@ -389,8 +389,8 @@ var dataList = [{
                 matchHost: 'Pakistan',
                 runnerUp: 'India',
                 winner: 'Sri Lanka',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/B6A3VIkxLdY'
             }
         },
 
@@ -409,8 +409,8 @@ var dataList = [{
                 matchHost: 'Sri Lanka',
                 runnerUp: 'Sri Lanka',
                 winner: 'India',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/B6A3VIkxLdY'
             }
         },
 
@@ -429,8 +429,8 @@ var dataList = [{
                 matchHost: 'Bangladesh',
                 runnerUp: 'Bangladesh',
                 winner: 'Pakistan',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/B6A3VIkxLdY'
             }
         },
 
@@ -449,8 +449,8 @@ var dataList = [{
                 matchHost: 'Bangladesh',
                 runnerUp: 'Pakistan',
                 winner: 'Sri Lanka',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/B6A3VIkxLdY'
             }
         },
 
@@ -469,8 +469,8 @@ var dataList = [{
                 matchHost: 'Bangladesh',
                 runnerUp: 'Bangladesh',
                 winner: 'India',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/B6A3VIkxLdY'
             }
         },
 
@@ -489,8 +489,8 @@ var dataList = [{
                 matchHost: 'United Arab Emirates',
                 runnerUp: 'Bangladesh',
                 winner: 'India',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/B6A3VIkxLdY'
             }
         }
     ]
@@ -515,8 +515,8 @@ var dataList = [{
                 matchHost: 'Dubai',
                 runnerUp: 'Quetta Gladiators',
                 winner: 'Islamabad United',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/4zo6z-Wxe5o'
             }
         },
 
@@ -535,8 +535,8 @@ var dataList = [{
                 matchHost: 'Lahore',
                 runnerUp: 'Quetta Gladiators',
                 winner: 'Peshawar Zalmi',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/FwL6C8jKBxY'
             }
         },
 
@@ -555,8 +555,8 @@ var dataList = [{
                 matchHost: 'Karachi',
                 runnerUp: 'Peshawar Zalmi',
                 winner: 'Islamabad United',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/0tc7wTFa8A4'
             }
         }
     ]
@@ -581,8 +581,8 @@ var dataList = [{
                 matchHost: 'Eden Gardens, Kolkata',
                 runnerUp: 'Chennai Super Kings',
                 winner: 'Mumbai Indians',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/0tc7wTFa8A4'
             }
         },
 
@@ -601,8 +601,8 @@ var dataList = [{
                 matchHost: 'M. Chinnaswamy Stadium, Bengaluru',
                 runnerUp: 'Kings XI Punjab',
                 winner: 'Kolkata Knight Riders',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/0tc7wTFa8A4'
             }
         },
 
@@ -621,8 +621,8 @@ var dataList = [{
                 matchHost: 'Eden Gardens, Kolkata',
                 runnerUp: 'Chennai Super Kings',
                 winner: 'Mumbai Indians',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/0tc7wTFa8A4'
             }
         },
 
@@ -641,8 +641,8 @@ var dataList = [{
                 matchHost: 'M. Chinnaswamy Stadium, Bengaluru',
                 runnerUp: 'Royal Challengers Bangalore',
                 winner: 'Sunrisers Hyderabad',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/0tc7wTFa8A4'
             }
         },
 
@@ -661,8 +661,8 @@ var dataList = [{
                 matchHost: 'Rajiv Gandhi International Cricket Stadium, Hyderabad',
                 runnerUp: 'Rising Pune Supergiant',
                 winner: 'Mumbai Indians',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/0tc7wTFa8A4'
             }
         },
 
@@ -681,8 +681,8 @@ var dataList = [{
                 matchHost: 'Wankhede Stadium, Mumbai',
                 runnerUp: 'Sunrisers Hyderabad',
                 winner: 'Chennai Super Kings',
-                text: '',
-                vid: ''
+                text: 'The 1999 Cricket World Cup (officially known as ICC Cricket World Cup 99) was the seventh edition of the Cricket World Cup, organised by the International Cricket Council (ICC). It was hosted primarily by England, with some games being played in Scotland, Ireland, Wales and the Netherlands. The tournament was won by Australia, who beat Pakistan by 8 wickets in the final at Lords Cricket Ground in London. New Zealand and South Africa were the other semi-finalists.',
+                vid: 'https://www.youtube.com/embed/0tc7wTFa8A4'
             }
         }
     ]

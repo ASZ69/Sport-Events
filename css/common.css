@@ -1,6 +1,10 @@
 /* CSS Document */
 *{user-select: none;}
 
+a{
+	text-decoration: none !important;
+}
+
 .dis-none{
 	display: none !important;
 }

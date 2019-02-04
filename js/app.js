@@ -8,11 +8,12 @@ events.controller("categoriesControl",function($scope,$filter){
 		var category = clickedRefer.innerHTML;
 		
 		$scope.eventsArray = $filter('filter')(dataList, {name: category});
+		initHover();
 	};
 
     $scope.viewMore = function (event) {
         var clickedRefer = event.currentTarget;
-        var sessionName = clickedRefer.parentElement.getElementsByTagName("h3")[0].innerHTML;
+        var sessionName = clickedRefer.parentElement.parentElement.parentElement.parentElement.getElementsByTagName("h3")[0].innerHTML;
 
         $(".right-view").css("display", "none");
         $(".right-page").css("display", "block");
@@ -27,6 +28,8 @@ events.controller("categoriesControl",function($scope,$filter){
 			$("#frame").attr("src",data);
 			$("#frame").show();
 		},1000);
+		
+		initHover();
 		
     };
 
@@ -50,13 +53,22 @@ events.controller("categoriesControl",function($scope,$filter){
             $("#frame").attr("src", data);
             $("#frame").show();
         }, 1000);
+		
+		initHover();
+		
     };
 
 	$scope.eventsArray = $filter('filter')(dataList, {name: 'ICC ODI WorldCup'});
-	
 	$scope.categoryArray = dataList;
+	initHover();
 	
 });
+
+function initHover(){
+	$(function () {
+		$('.hover-effect ').hoverdir();
+	});
+}
 
 var dataList = [{
     name: 'ICC ODI WorldCup',

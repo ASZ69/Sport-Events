@@ -17,7 +17,8 @@
 <!--angularjs-->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
 <!--angularjs end-->
-	
+
+<script src="../js/jquery.hoverdir.js"></script>
 <script src="../js/app.js"></script>
 <script src="../js/events.js"></script>
 	
@@ -48,9 +49,9 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">Cricket</a>
-                    <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu mega-menu">
                         <div class="row">
                             <div class="col-md-3">
 								<div class="position-relative mr-tb-15" style="width: 100%; height: 10vw;">
@@ -96,9 +97,9 @@
 					<a class="nav-link" href="hockey.html">Hockey</a>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
 					 aria-haspopup="true" aria-expanded="false"> Basketball </a>
-					<div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+					<div class="dropdown-menu mega-menu">
 						<div class="row">
 							<div class="col-md-3"> <img src="../images/logo/ball.png" width="100vw" height="100vw" alt="flower" class="img-fluid">
 								<h4 style="color: orangered;">Flower 1</h4>
@@ -165,19 +166,24 @@
 
                     <div class="right-view">
                         <div ng-repeat="season in eventsArray[0].seasons" class="mr-lr-5 mr-tb-5">
-                            <span class="dis-none"></span>
-                            <div class="cd-img-p">
+                            <div class="cd-img-p hover-effect">
                                 <img src="{{season.imgSrc}}" alt="PIC">
+								<div>
+									<section class="abs-center">
+										<button class="btn btn-info btn-sm btn-block" ng-click="viewMore($event)">
+											View more...
+										</button>
+										<button class="btn btn-info btn-sm btn-block">
+											<a href="{{season.wiki}}" target="new" class="text-white">More on wikipedia</a>
+										</button>
+									</section>
+								</div>
                             </div>
                             <hr>
                             <div class="card-heading">
                                 <h3>{{season.name}}</h3>
                                 <h4>{{season.moreDetails.winner}}</h4>
                             </div>
-                            <a class="dis-blk text-center" ng-click="viewMore($event)">View more...</a>
-                            <a href="{{season.wiki}}" target="new" class="dis-blk text-center mr-t-2">
-                                Get more details on Wikipedia...
-                            </a>
                         </div>
                     </div>
 

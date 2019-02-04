@@ -5,6 +5,10 @@
 	display: none !important;
 }
 
+.dis-no{
+	display: none;
+}
+
 .mr-tb-15 {
 	margin-top: 15px;
 	margin-bottom: 15px;

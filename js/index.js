@@ -4,7 +4,7 @@ $(document).ready(function(){
 	
 //	$('#background').append('<img src="images/cricket/stadium-wide.jpg" alt="BG" class="bg-img bg-img1">');
 	
-	var bgVideos = '<video autoplay loop muted class="bg-img1 dis-none"><source src="videos/bg/cricicket.mp4"></video><video autoplay loop muted class="bg-img1 dis-none"><source src="videos/bg/football.mp4"></video><video autoplay loop muted class="bg-img1 dis-none"><source src="videos/bg/hockey.mp4"></video><video autoplay loop muted class="bg-img1 dis-none"><source src="videos/bg/basketball.mp4"></video>';
+	var bgVideos = '<video autoplay loop muted class="bg-img1 dis-no"><source src="videos/bg/cricicket.mp4"></video><video autoplay loop muted class="bg-img1 dis-no"><source src="videos/bg/football.mp4"></video><video autoplay loop muted class="bg-img1 dis-no"><source src="videos/bg/hockey.mp4"></video><video autoplay loop muted class="bg-img1 dis-no"><source src="videos/bg/basketball.mp4"></video>';
 	$('#background').append(bgVideos);
 	
 	$(function() {

@@ -15,8 +15,6 @@ events.controller("categoriesControl",function($scope,$filter){
         var clickedRefer = event.currentTarget;
         var sessionName = clickedRefer.parentElement.parentElement.parentElement.parentElement.getElementsByTagName("h3")[0].innerHTML;
 
-        $(".right-view").css("display", "none");
-        $(".right-page").css("display", "block");
         $(".scroll-container h2").addClass("mr-r-30p");
         $(".right-page h3").css("animation","2s top-to-down-margin");
 
@@ -29,6 +27,9 @@ events.controller("categoriesControl",function($scope,$filter){
 			$("#frame").show();
 		},1000);
 		
+        $(".right-view").css("display", "none");
+        $(".right-page").css("display", "block");
+		
 		initHover();
 		
     };
@@ -40,8 +41,6 @@ events.controller("categoriesControl",function($scope,$filter){
 		var leagueName = clickedRefer.parentElement.parentElement.getElementsByTagName("h3")[0].innerHTML;
 		$scope.eventsArray = $filter('filter')(dataList, {name: leagueName});
 		
-        $(".right-view").css("display", "none");
-        $(".right-page").css("display", "block");
         $(".scroll-container h2").addClass("mr-r-30p");
         $(".right-page h3").css("animation", "2s top-to-down-margin");
 
@@ -53,6 +52,10 @@ events.controller("categoriesControl",function($scope,$filter){
             $("#frame").attr("src", data);
             $("#frame").show();
         }, 1000);
+		
+		
+        $(".right-view").css("display", "none");
+        $(".right-page").css("display", "block");
 		
 		initHover();
 		

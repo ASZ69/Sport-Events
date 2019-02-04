@@ -79,12 +79,12 @@
 	background-color: white;
 	box-shadow: 0 4px 8px 0 #ccc;
 	border-radius: 5px;
+	padding: 8px 5px;
 	overflow: hidden;
 }
 
 .right-view > div:hover{
 	box-shadow: 0 6px 12px 0 #383838;
-	cursor: pointer;
 }
 
 .cd-img-p img{

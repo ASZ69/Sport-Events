@@ -47,9 +47,48 @@
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link active" href="#">Cricket</a>
-				</li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">Cricket</a>
+                    <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                        <div class="row">
+                            <div class="col-md-3">
+								<div class="position-relative mr-tb-15" style="width: 100%; height: 10vw;">
+									<img src="../images/logo/ball.png" width="100vw" height="auto" alt="flower" class="img-fluid img-thumbnail abs-center">
+								</div>
+                                <h4 style="color: orangered;" class="text-center mr-tb-15">Cricket</h4>
+								<p class="text-center"><a href="#">View more...</a></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p><strong class="sub-menu-heading">ICC ODI World Cup</strong></p>
+                                <p><a href="#">ICC 1996</a></p>
+                                <p><a href="#">ICC 1999</a></p>
+                                <p><a href="#">ICC 2003</a></p>
+                                <p><a href="#">ICC 2007</a></p>
+                                <p><a href="#">ICC 2011</a></p>
+                                <p><a href="#">ICC 2015</a></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p><strong class="sub-menu-heading">ICC T-20 World Cup</strong></p>
+                                <p><a href="#">ICC 2007</a></p>
+                                <p><a href="#">ICC 2009</a></p>
+                                <p><a href="#">ICC 2010</a></p>
+                                <p><a href="#">ICC 2012</a></p>
+                                <p><a href="#">ICC 2014</a></p>
+                                <p><a href="#">ICC 2016</a></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p><strong class="sub-menu-heading">Pakistan Super League</strong></p>
+                                <p><a href="#">PSL 2016</a></p>
+                                <p><a href="#">PSL 2017</a></p>
+                                <p><a href="#">PSL 2018</a></p>
+								<p><strong class="sub-menu-heading">Indian Premier League</strong></p>
+                                <p><a href="#">PSL 2017</a></p>
+                                <p><a href="#">PSL 2018</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
 				<li class="nav-item">
 					<a class="nav-link" href="football.html">Football</a>
 				</li>
@@ -121,6 +160,7 @@
 			<div class="col-md-9">
 				
                 <div class="scroll-container mr-lr-dec">
+
                     <h2 class="text-center mr-tb-5" style="transition:2s all;">{{eventsArray[0].name}}</h2>
 
                     <div class="right-view">
@@ -264,6 +304,7 @@
                     </div>
 
                 </div>
+
 			</div>
 		</div>
 	</div>

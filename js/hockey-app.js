@@ -248,7 +248,7 @@ var dataList = [{
                 matchHost: 'United States',
                 runnerUp: 'Blackpool',
                 winner: 'Manchester United',
-                text: 'The 2010–11 Premier League (known as the Barclays Premier League for sponsorship reasons) was the 19th season of the Premier League since its establishment in 1992. The 2010–11 fixtures were released on 17 June 2010 at 09:00 BST.[2] The season began on 14 August 2010,[3] and ended on 22 May 2011. Chelsea were the defending champions.',
+                text: 'The 2010â€“11 Premier League (known as the Barclays Premier League for sponsorship reasons) was the 19th season of the Premier League since its establishment in 1992. The 2010â€“11 fixtures were released on 17 June 2010 at 09:00 BST.[2] The season began on 14 August 2010,[3] and ended on 22 May 2011. Chelsea were the defending champions.',
                 vid: 'https://www.youtube.com/embed/3GjxUn5rN0g'
             }
         },
@@ -267,7 +267,7 @@ var dataList = [{
                 matchHost: 'England',
                 runnerUp: 'Queens Park Rangers',
                 winner: 'Manchester City',
-                text: 'The 2011–12 Premier League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
+                text: 'The 2011â€“12 Premier League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
                 vid: 'https://www.youtube.com/embed/VEHidPoEyJw'
             }
         },
@@ -286,7 +286,7 @@ var dataList = [{
                 matchHost: 'United Kingdom',
                 runnerUp: 'West Bromwich Albion',
                 winner: 'Manchester United',
-                text: 'The 2012–13 Premier League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
+                text: 'The 2012â€“13 Premier League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
                 vid: 'https://www.youtube.com/embed/VEHidPoEyJw'
             }
         },
@@ -305,7 +305,7 @@ var dataList = [{
                 matchHost: 'Italy',
                 runnerUp: 'West Ham United',
                 winner: 'Manchester City',
-                text: 'The 2013–14 Premier League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
+                text: 'The 2013â€“14 Premier League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
                 vid: 'https://www.youtube.com/embed/VEHidPoEyJw'
             }
         },
@@ -324,7 +324,7 @@ var dataList = [{
                 matchHost: 'England',
                 runnerUp: 'Sunderland',
                 winner: 'Chelsea',
-                text: 'The 2014–15 Premier League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
+                text: 'The 2014â€“15 Premier League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
                 vid: 'https://www.youtube.com/embed/VEHidPoEyJw'
             }
         },
@@ -343,7 +343,7 @@ var dataList = [{
                 matchHost: 'England',
                 runnerUp: 'Chelsea',
                 winner: 'Leicester City',
-                text: 'The 2015–16 Premier League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
+                text: 'The 2015â€“16 Premier League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
                 vid: 'https://www.youtube.com/embed/VEHidPoEyJw'
             }
         },
@@ -362,7 +362,7 @@ var dataList = [{
                 matchHost: 'United States',
                 runnerUp: 'Southampton',
                 winner: 'Manchester City',
-                text: 'The 2016–17 Premier League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
+                text: 'The 2016â€“17 Premier League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
                 vid: 'https://www.youtube.com/embed/VEHidPoEyJw'
             }
         },
@@ -381,7 +381,7 @@ var dataList = [{
                 matchHost: 'United States',
                 runnerUp: 'Chelsea',
                 winner: 'Manchester City',
-                text: 'The 2017–18 Premier League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
+                text: 'The 2017â€“18 Premier League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
                 vid: 'https://www.youtube.com/embed/VEHidPoEyJw'
             }
         }
@@ -406,7 +406,7 @@ var dataList = [{
                     matchHost: 'Italy',
                     runnerUp: 'Barcelona',
                     winner: 'Atletico Madrid',
-                    text: 'The 2014–15 La Liga League (known as the Barclays Premier League for sponsorship reasons) was the 19th season of the Premier League since its establishment in 1992. The 2010–11 fixtures were released on 17 June 2010 at 09:00 BST.[2] The season began on 14 August 2010,[3] and ended on 22 May 2011. Chelsea were the defending champions.',
+                    text: 'The 2014â€“15 La Liga League (known as the Barclays Premier League for sponsorship reasons) was the 19th season of the Premier League since its establishment in 1992. The 2010â€“11 fixtures were released on 17 June 2010 at 09:00 BST.[2] The season began on 14 August 2010,[3] and ended on 22 May 2011. Chelsea were the defending champions.',
                     vid: 'https://www.youtube.com/embed/LF1E3J-3HrA'
                 }
             },
@@ -425,7 +425,7 @@ var dataList = [{
                     matchHost: 'England',
                     runnerUp: 'Granada',
                     winner: 'Barcelona',
-                    text: 'The 2015–16 La Liga League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
+                    text: 'The 2015â€“16 La Liga League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
                     vid: 'https://www.youtube.com/embed/LF1E3J-3HrA'
                 }
             },
@@ -444,7 +444,7 @@ var dataList = [{
                     matchHost: 'United Kingdom',
                     runnerUp: 'Barcelona',
                     winner: 'Real Madrid',
-                    text: 'The 2016–17 La liga League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
+                    text: 'The 2016â€“17 La liga League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
                     vid: 'https://www.youtube.com/embed/LF1E3J-3HrA'
                 }
             }

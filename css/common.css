@@ -87,8 +87,13 @@ ul{
 .mr-r-30p{
     margin-right: 30%;
 }
+
 .abs-v-center {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+.mega-menu{
+	width: 820px;
 }

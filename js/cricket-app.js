@@ -81,25 +81,26 @@ events.controller("categoriesControl", function ($scope, $filter) {
 		
         $scope.eventsArray = $filter('filter')(dataList, { name: category });
 
-        $(".scroll-container h2").addClass("mr-r-30p");
-        $(".right-page h3").css("animation", "2s top-to-down-margin");
+        if(season != ""){
+			$(".scroll-container h2").addClass("mr-r-30p");
+			$(".right-page h3").css("animation", "2s top-to-down-margin");
 
-        $scope.moreDetailsArray = $filter('filter')($scope.eventsArray[0].seasons, { name: season });
-		
-        $("#frame").hide();
+			$scope.moreDetailsArray = $filter('filter')($scope.eventsArray[0].seasons, { name: season });
 
-        setTimeout(function () {
-            var data = $("#vidData").html().trim();
-            $("#frame").attr("src", data);
-            $("#frame").show();
-        }, 1000);
+			$("#frame").hide();
+
+			setTimeout(function () {
+				var data = $("#vidData").html().trim();
+				$("#frame").attr("src", data);
+				$("#frame").show();
+			}, 1000);
 
 
-        $(".right-view").css("display", "none");
-        $(".right-page").css("display", "block");
+			$(".right-view").css("display", "none");
+			$(".right-page").css("display", "block");
+		}
 		
         initHover();
-		
 	}
 	
     $scope.categoryArray = dataList;

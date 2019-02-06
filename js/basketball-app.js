@@ -60,7 +60,7 @@ events.controller("categoriesControl",function($scope,$filter){
 		
     };
 
-    $scope.eventsArray = $filter('filter')(dataList, { name: 'Hockey WorldCup'});
+    $scope.eventsArray = $filter('filter')(dataList, { name: 'Basketball WorldCup'});
 	$scope.categoryArray = dataList;
 	initHover();
 	
@@ -73,150 +73,132 @@ function initHover(){
 }
 
 var dataList = [{
-    name: 'Hockey WorldCup',
+    name: 'Basketball WorldCup',
     seasons: [
 
         {
-            name: '1990',
-            wiki: 'https://en.wikipedia.org/wiki/1990_Men%27s_Hockey_World_Cup',
-            imgSrc: '../images/hockey/cards/worldcup/header/1990.jpg',
+            name: 'FIBA 1990',
+            wiki: 'https://en.wikipedia.org/wiki/1990_FIBA_World_Championship',
+            imgSrc: '../images/basketball/cards/worldcup/header/1990.jpg',
             moreDetails: {
                 images: [
-                    '../images/hockey/cards/worldcup/slider/1990/1.jpg',
-                    '../images/hockey/cards/worldcup/slider/1990/2.jpg'],
-                scoreDefeat: '1 Goals',
-                scoreWin: '3 Goals',
-                matchHost: 'Lahore, Pakistan',
-                runnerUp: 'Pakistan',
-                winner: 'Netherlands',
-                text: 'The 1990 Mens Hockey World Cup was the seventh edition of the Hockey World Cup mens field hockey tournament. It was held in National Hockey Stadium in Lahore, Pakistan from 12–23 February 1990. The Netherlands defeated Pakistan 3–1 in the final, with Australia beating out West Germany for third place in extra time.',
-                vid:'https://www.youtube.com/embed/3fD6hheug4w'
+                    '../images/basketball/cards/worldcup/slider/1990/1.jpg',
+                    '../images/basketball/cards/worldcup/slider/1990/2.jpg'],
+                scoreDefeat: '75 Score',
+                scoreWin: '92 Score',
+                matchHost: 'Argentina',
+                runnerUp: 'Soviet Union',
+                winner: 'Yugoslavia',
+                text: 'The 1990 FIBA World Championship was the 11th FIBA World Championship, the international basketball world championship for mens teams. It was hosted by Argentina from August 8 to August 20, 1990. The competition final phase was held at the Luna Park, Buenos Aires.',
+                vid:'https://www.youtube.com/embed/kSjZgNuM4cI'
             }
         },
 
         {
-            name: '1994',
-            wiki: 'https://en.wikipedia.org/wiki/1994_Men%27s_Hockey_World_Cup',
-            imgSrc: '../images/hockey/cards/worldcup/header/1994.jpg',
+            name: 'FIBA 1994',
+            wiki: 'https://en.wikipedia.org/wiki/1994_FIBA_World_Championship',
+            imgSrc: '../images/basketball/cards/worldcup/header/1994.jpg',
             moreDetails: {
                 images: [
-                    '../images/hockey/cards/worldcup/slider/1994/1.jpg',
-                    '../images/hockey/cards/worldcup/slider/1994/2.jpg'],
-                scoreDefeat: '1 Goals 3 penalty',
-                scoreWin: '1 Goals 4 penalty',
-                matchHost: 'Australia',
-                runnerUp: 'Netherlands',
-                winner: 'Pakistan',
-                text: 'The 1994 Mens Hockey World Cup was the eighth edition of the Hockey World Cup, the quadrennial world championship for mens national field hockey teams organized by the FIH. It was held from 23 November to 4 December 1994 in Sydney, Australia. Pakistan defeated the Netherlands 1–1 (4–3 on penalties) to lift the trophy',
-                vid: 'https://www.youtube.com/embed/7P2zA2mzsKk'
+                    '../images/basketball/cards/worldcup/slider/1994/1.jpg',
+                    '../images/basketball/cards/worldcup/slider/1994/2.jpg'],
+                scoreDefeat: '91 Scores',
+                scoreWin: '137 Scores',
+                matchHost: 'Canada',
+                runnerUp: 'Russia',
+                winner: 'United States',
+                text: 'The 1994 FIBA World Championship was the 12th FIBA World Championship, the international basketball world championship for mens teams. The tournament was hosted by Canada from August 4 to August 14, 1994. The tournament was held at SkyDome and Maple Leaf Gardens in Toronto[2] as well as at Copps Coliseum in Hamilton.[2] The hosting duties were originally awarded to Belgrade, Yugoslavia, but after United Nations imposed a trade embargo on the Balkan country, Toronto stepped in as a replacement option in 1992.',
+                vid: 'https://www.youtube.com/embed/kJFBSK-qX58'
             }
         },
 
         {
-            name: '1998',
-            wiki: 'https://en.wikipedia.org/wiki/1998_Men%27s_Hockey_World_Cup',
-            imgSrc: '../images/hockey/cards/worldcup/header/1998.jpg',
+            name: 'FIBA 1998',
+            wiki: 'https://en.wikipedia.org/wiki/1998_FIBA_World_Championship',
+            imgSrc: '../images/basketball/cards/worldcup/header/1998.jpg',
             moreDetails: {
                 images: [
-                    '../images/hockey/cards/worldcup/slider/1998/1.jpg',
-                    '../images/hockey/cards/worldcup/slider/1998/2.jpg'],
-                scoreDefeat: '2 Goals a.e.t',
-                scoreWin: '3 Goals a.e.t',
-                matchHost: 'Netherlands',
-                runnerUp: 'Spain',
-                winner: 'Netherlands',
-                text: 'The 1998 Mens Hockey World Cup was the ninth edition of the Hockey World Cup, the quadrennial world championship for mens national field hockey teams organized by the FIH. It was held from 23 November to 4 December 1998 in Sydney, Netherlands. Netherlands defeated the Spain 3–2 (a.e.t) to lift the trophy',
-                vid: 'https://www.youtube.com/embed/OgbewPAtNzo'
+                    '../images/basketball/cards/worldcup/slider/1998/1.jpg',
+                    '../images/basketball/cards/worldcup/slider/1998/2.jpg'],
+                scoreDefeat: '62 Scores',
+                scoreWin: '64 Scores',
+                matchHost: 'Greece',
+                runnerUp: 'Russia',
+                winner: 'Yugoslavia',
+                text: 'The 1998 FIBA World Championship was the 13th FIBA World Championship, an international basketball tournament held by the International Basketball Federation and hosted in Greece from 29 July to 9 August 1998. The tournament was contested by 16 nations and the matches were played in two venues in Athens and Piraeus.',
+                vid: 'https://www.youtube.com/embed/4mrTUWACzoQ'
             }
         },
 
         {
-            name: '2002',
-            wiki: 'https://en.wikipedia.org/wiki/2004_Men%27s_Hockey_World_Cup',
-            imgSrc: '../images/hockey/cards/worldcup/header/2002.jpg',
+            name: 'FIBA 2002',
+            wiki: 'https://en.wikipedia.org/wiki/2002_FIBA_World_Championship',
+            imgSrc: '../images/basketball/cards/worldcup/header/2002.jpg',
             moreDetails: {
                 images: [
-                    '../images/hockey/cards/worldcup/slider/2002/1.jpg',
-                    '../images/hockey/cards/worldcup/slider/2002/2.jpg'],
-                scoreDefeat: '1 Goals',
-                scoreWin: '2 Goals',
-                matchHost: 'Malaysia',
-                runnerUp: 'Australia',
-                winner: 'Germany',
-                text: 'The 2002 Mens Hockey World Cup was the ninth edition of the Hockey World Cup, the quadrennial world championship for mens national field hockey teams organized by the FIH. It was held from 23 November to 4 December 2002 in Sydney, Netherlands. Netherlands defeated the Spain 2–1 to lift the trophy',
-                vid: 'https://www.youtube.com/embed/tsSOSuQ5wLE'
+                    '../images/basketball/cards/worldcup/slider/2002/1.jpg',
+                    '../images/basketball/cards/worldcup/slider/2002/2.jpg'],
+                scoreDefeat: '77 Scores OT',
+                scoreWin: '84 Scores OT',
+                matchHost: 'United States',
+                runnerUp: 'Argentina',
+                winner: 'Yugoslavia',
+                text: 'The 2002 FIBA World Championship was the 14th FIBA World Championship, the international world championship for mens basketball teams. The tournament held by the International Basketball Federation in Indianapolis, Indiana, United States from August 29 to September 8, 2002.',
+                vid: 'https://www.youtube.com/embed/TsL0HpeVzXs'
             }
         },
 
         {
-            name: '2006',
-            wiki: 'https://en.wikipedia.org/wiki/2006_Men%27s_Hockey_World_Cup',
-            imgSrc: '../images/hockey/cards/worldcup/header/2006.jpg',
+            name: 'FIBA 2006',
+            wiki: 'https://en.wikipedia.org/wiki/2006_FIBA_World_Championship',
+            imgSrc: '../images/basketball/cards/worldcup/header/2006.jpg',
             moreDetails: {
                 images: [
-                    '../images/hockey/cards/worldcup/slider/2006/1.jpg',
-                    '../images/hockey/cards/worldcup/slider/2006/2.jpg'],
-                scoreDefeat: '3 Goals',
-                scoreWin: '4 Goals',
-                matchHost: 'Germany',
-                runnerUp: 'Australia',
-                winner: 'Germany',
-                text: 'The 2006 Mens Hockey World Cup was the ninth edition of the Hockey World Cup, the quadrennial world championship for mens national field hockey teams organized by the FIH. It was held from 23 November to 4 December 2006 in Sydney, Netherlands. Netherlands defeated the Spain 4–3 to lift the trophy',
-                vid: 'https://www.youtube.com/embed/xiOpSjqIfxg'
+                    '../images/basketball/cards/worldcup/slider/2006/1.jpg',
+                    '../images/basketball/cards/worldcup/slider/2006/2.jpg'],
+                scoreDefeat: '47 Scores',
+                scoreWin: '70 Scores',
+                matchHost: 'Japan',
+                runnerUp: 'Greece',
+                winner: 'Spain',
+                text: 'The 2006 FIBA World Championship was the 14th FIBA World Championship, the international world championship for mens basketball teams. The tournament held by the International Basketball Federation in Indianapolis, Indiana, United States from August 29 to September 8, 2006.',
+                vid: 'https://www.youtube.com/embed/07EWuL6pw0A'
             }
         },
 
         {
-            name: '2010',
-            wiki: 'https://en.wikipedia.org/wiki/2010_Men%27s_Hockey_World_Cup',
-            imgSrc: '../images/hockey/cards/worldcup/header/2010.jpg',
+            name: 'FIBA 2010',
+            wiki: 'https://en.wikipedia.org/wiki/2010_FIBA_World_Championship',
+            imgSrc: '../images/basketball/cards/worldcup/header/2010.jpg',
             moreDetails: {
                 images: [
-                    '../images/hockey/cards/worldcup/slider/2010/1.jpg',
-                    '../images/hockey/cards/worldcup/slider/2010/2.jpg'],
-                scoreDefeat: '1 Goals',
-                scoreWin: '2 Goals',
-                matchHost: 'India',
-                runnerUp: 'Germany',
-                winner: 'Australia',
-                text: 'The 2010 Mens Hockey World Cup was the ninth edition of the Hockey World Cup, the quadrennial world championship for mens national field hockey teams organized by the FIH. It was held from 23 November to 4 December 2010 in India. Australia defeated the Germany 2–1 to lift the trophy',
-                vid: 'https://www.youtube.com/embed/dL0lbB7BUBo'
+                    '../images/basketball/cards/worldcup/slider/2010/1.jpg',
+                    '../images/basketball/cards/worldcup/slider/2010/2.jpg'],
+                scoreDefeat: '64 Scores',
+                scoreWin: '81 Scores',
+                matchHost: 'Turkey',
+                runnerUp: 'Turkey',
+                winner: 'United States',
+                text: 'The 2010 FIBA World Championship was the 14th FIBA World Championship, the international world championship for mens basketball teams. The tournament held by the International Basketball Federation in Indianapolis, Indiana, United States from August 29 to September 8, 2010.',
+                vid: 'https://www.youtube.com/embed/ZFg0m9AefsM'
             }
         },
 
         {
-            name: '2014',
-            wiki: 'https://en.wikipedia.org/wiki/2014_Men%27s_Hockey_World_Cup',
-            imgSrc: '../images/hockey/cards/worldcup/header/2014.jpg',
+            name: 'FIBA 2014',
+            wiki: 'https://en.wikipedia.org/wiki/2014_FIBA_World_Championship',
+            imgSrc: '../images/basketball/cards/worldcup/header/2014.jpg',
             moreDetails: {
                 images: [
-                    '../images/hockey/cards/worldcup/slider/2014/1.jpg',
-                    '../images/hockey/cards/worldcup/slider/2014/2.jpg'],
-                scoreDefeat: '1 Goals',
-                scoreWin: '6 Goals',
-                matchHost: 'Netherlands',
-                runnerUp: 'Netherlands',
-                winner: 'Australia',
-                text: 'The 2014 Mens Hockey World Cup was the ninth edition of the Hockey World Cup, the quadrennial world championship for mens national field hockey teams organized by the FIH. It was held from 23 November to 4 December 2014 in India. Australia defeated the Netherlands  6–1 to lift the trophy',
-                vid: 'https://www.youtube.com/embed/nAfzagRAS74'
-            }
-        },
-
-        {
-            name: '2018',
-            wiki: 'https://en.wikipedia.org/wiki/2018_Men%27s_Hockey_World_Cup',
-            imgSrc: '../images/hockey/cards/worldcup/header/2018.jpg',
-            moreDetails: {
-                images: [
-                    '../images/hockey/cards/worldcup/slider/2018/1.jpg',
-                    '../images/hockey/cards/worldcup/slider/2018/2.jpg'],
-                scoreDefeat: '0 Goals 2 Penalaty',
-                scoreWin: '0 Goals 3 Penalaty',
-                matchHost: 'India',
-                runnerUp: 'Netherlands',
-                winner: 'Belgium',
-                text: 'The 2018 Mens Hockey World Cup was the ninth edition of the Hockey World Cup, the quadrennial world championship for mens national field hockey teams organized by the FIH. It was held from 23 November to 4 December 2018 in India. Australia defeated the Netherlands  6–1 to lift the trophy',
-                vid: 'https://www.youtube.com/embed/2W3Y79Nz4Yw'
+                    '../images/basketball/cards/worldcup/slider/2014/1.jpg',
+                    '../images/basketball/cards/worldcup/slider/2014/2.jpg'],
+                scoreDefeat: '92 Scores',
+                scoreWin: '129 Scores',
+                matchHost: 'Spain',
+                runnerUp: 'Serbia',
+                winner: 'United States',
+                text: 'The 2014 FIBA World Championship was the 14th FIBA World Championship, the international world championship for mens basketball teams. The tournament held by the International Basketball Federation in Indianapolis, Indiana, United States from August 29 to September 8, 2014.',
+                vid: 'https://www.youtube.com/embed/B-bPqXTWfeo'
             }
         }
     ]

@@ -1,5 +1,10 @@
 // JavaScript Document
 
+String.prototype.replaceAll = function(search, replacement) {
+    var target = this;
+    return target.split(search).join(replacement);
+};
+
 var events = angular.module("events", []);
 
 events.controller("categoriesControl", function ($scope, $filter) {
@@ -60,10 +65,44 @@ events.controller("categoriesControl", function ($scope, $filter) {
         initHover();
 
     };
+	
+//	check url to get specific result
+	var url = window.location.search.replace("?","").replaceAll("%22","").replaceAll("%20"," ");
+	if(url == ""){
+		
+		$scope.eventsArray = $filter('filter')(dataList, { name: 'ICC ODI WorldCup' });
+		initHover();
+		
+	}else{
+		
+		var parts = url.split("&");
+		var category = parts[0].split("=")[1];
+		var season = parts[1].split("=")[1];
+		
+        $scope.eventsArray = $filter('filter')(dataList, { name: category });
 
-    $scope.eventsArray = $filter('filter')(dataList, { name: 'ICC ODI WorldCup' });
+        $(".scroll-container h2").addClass("mr-r-30p");
+        $(".right-page h3").css("animation", "2s top-to-down-margin");
+
+        $scope.moreDetailsArray = $filter('filter')($scope.eventsArray[0].seasons, { name: season });
+		
+        $("#frame").hide();
+
+        setTimeout(function () {
+            var data = $("#vidData").html().trim();
+            $("#frame").attr("src", data);
+            $("#frame").show();
+        }, 1000);
+
+
+        $(".right-view").css("display", "none");
+        $(".right-page").css("display", "block");
+		
+        initHover();
+		
+	}
+	
     $scope.categoryArray = dataList;
-    initHover();
 
 });
 

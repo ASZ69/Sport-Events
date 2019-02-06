@@ -61,11 +61,12 @@ h1 {
 
     .sides ul li {
         text-decoration: none;
-        height: 45px;
+        height: auto;
         list-style: none;
         border-bottom: 1px solid #ccc;
-        line-height: 45px;
+        line-height: 3.4vw;
         padding-left: 10px;
+		font-size: 1.2vw;
     }
 
         .sides ul li:hover {

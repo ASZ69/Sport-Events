@@ -1,46 +1,20 @@
 // JavaScript Document
 
-var events = angular.module("events",[]);
+var events = angular.module("events", []);
 
-events.controller("categoriesControl",function($scope,$filter){
-	$scope.showCat = function(event){
-		var clickedRefer = event.currentTarget;
-		var category = clickedRefer.innerHTML;
-		
-		$scope.eventsArray = $filter('filter')(dataList, {name: category});
-		initHover();
-	};
+events.controller("categoriesControl", function ($scope, $filter) {
+    $scope.showCat = function (event) {
+        var clickedRefer = event.currentTarget;
+        var category = clickedRefer.innerHTML;
+
+        $scope.eventsArray = $filter('filter')(dataList, { name: category });
+        initHover();
+    };
 
     $scope.viewMore = function (event) {
         var clickedRefer = event.currentTarget;
         var sessionName = clickedRefer.parentElement.parentElement.parentElement.parentElement.getElementsByTagName("h3")[0].innerHTML;
 
-        $(".scroll-container h2").addClass("mr-r-30p");
-        $(".right-page h3").css("animation","2s top-to-down-margin");
-
-        $scope.moreDetailsArray = $filter('filter')($scope.eventsArray[0].seasons, { name: sessionName});
-		$("#frame").hide();
-		
-		setTimeout(function(){
-			var data = $("#vidData").html().trim();
-			$("#frame").attr("src",data);
-			$("#frame").show();
-		},1000);
-		
-        $(".right-view").css("display", "none");
-        $(".right-page").css("display", "block");
-		
-		initHover();
-		
-    };
-
-    $scope.viewSubCategory = function (event) {
-        var clickedRefer = event.currentTarget;
-        var sessionName = clickedRefer.innerHTML;
-		
-		var leagueName = clickedRefer.parentElement.parentElement.getElementsByTagName("h3")[0].innerHTML;
-		$scope.eventsArray = $filter('filter')(dataList, {name: leagueName});
-		
         $(".scroll-container h2").addClass("mr-r-30p");
         $(".right-page h3").css("animation", "2s top-to-down-margin");
 
@@ -52,25 +26,51 @@ events.controller("categoriesControl",function($scope,$filter){
             $("#frame").attr("src", data);
             $("#frame").show();
         }, 1000);
-		
-		
+
         $(".right-view").css("display", "none");
         $(".right-page").css("display", "block");
-		
-		initHover();
-		
+
+        initHover();
+
     };
 
-	$scope.eventsArray = $filter('filter')(dataList, {name: 'ICC ODI WorldCup'});
-	$scope.categoryArray = dataList;
-	initHover();
-	
+    $scope.viewSubCategory = function (event) {
+        var clickedRefer = event.currentTarget;
+        var sessionName = clickedRefer.innerHTML;
+
+        var leagueName = clickedRefer.parentElement.parentElement.getElementsByTagName("h3")[0].innerHTML;
+        $scope.eventsArray = $filter('filter')(dataList, { name: leagueName });
+
+        $(".scroll-container h2").addClass("mr-r-30p");
+        $(".right-page h3").css("animation", "2s top-to-down-margin");
+
+        $scope.moreDetailsArray = $filter('filter')($scope.eventsArray[0].seasons, { name: sessionName });
+        $("#frame").hide();
+
+        setTimeout(function () {
+            var data = $("#vidData").html().trim();
+            $("#frame").attr("src", data);
+            $("#frame").show();
+        }, 1000);
+
+
+        $(".right-view").css("display", "none");
+        $(".right-page").css("display", "block");
+
+        initHover();
+
+    };
+
+    $scope.eventsArray = $filter('filter')(dataList, { name: 'ICC ODI WorldCup' });
+    $scope.categoryArray = dataList;
+    initHover();
+
 });
 
-function initHover(){
-	$(function () {
-		$('.hover-effect ').hoverdir();
-	});
+function initHover() {
+    $(function () {
+        $('.hover-effect ').hoverdir();
+    });
 }
 
 var dataList = [{
@@ -92,8 +92,8 @@ var dataList = [{
                 matchHost: 'Australia',
                 runnerUp: 'England',
                 winner: 'Pakistan',
-				text:'The final of the 1992 ICC Cricket World Cup was played at the Melbourne Cricket Ground, Melbourne on 25 March 1992. The match was won by Pakistan under their captain Imran Khan who defeated England by 22 runs to lift their first ever World Cup trophy. This was the second Cricket World Cup final to be played outside England and the first in Australia. 87,182 spectators turned out to see the final and the stadium was fully packed during the match.',
-				vid:'https://www.youtube.com/embed/Ow377NPp80o'
+                text: 'The final of the 1992 ICC Cricket World Cup was played at the Melbourne Cricket Ground, Melbourne on 25 March 1992. The match was won by Pakistan under their captain Imran Khan who defeated England by 22 runs to lift their first ever World Cup trophy. This was the second Cricket World Cup final to be played outside England and the first in Australia. 87,182 spectators turned out to see the final and the stadium was fully packed during the match.',
+                vid: 'https://www.youtube.com/embed/Ow377NPp80o'
             }
         },
 
@@ -106,7 +106,7 @@ var dataList = [{
                     '../images/cricket/cards/icc/slider/1996/1.jpg',
                     '../images/cricket/cards/icc/slider/1996/2.jpg',
                     '../images/cricket/cards/icc/slider/1996/3.jpg',
-					'../images/cricket/cards/icc/slider/1996/4.jpg'],
+                    '../images/cricket/cards/icc/slider/1996/4.jpg'],
                 scoreDefeat: '241/7 (50 overs)',
                 scoreWin: '245/3 (46.2 overs)',
                 matchHost: 'Pakistan',
@@ -126,7 +126,7 @@ var dataList = [{
                     '../images/cricket/cards/icc/slider/1999/1.jpg',
                     '../images/cricket/cards/icc/slider/1999/2.jpg',
                     '../images/cricket/cards/icc/slider/1999/3.jpg',
-					'../images/cricket/cards/icc/slider/1999/4.jpg'],
+                    '../images/cricket/cards/icc/slider/1999/4.jpg'],
                 scoreDefeat: '132 all out (39 overs)',
                 scoreWin: '133/2 (20.1 overs)',
                 matchHost: 'England',
@@ -146,7 +146,7 @@ var dataList = [{
                     '../images/cricket/cards/icc/slider/2003/1.jpg',
                     '../images/cricket/cards/icc/slider/2003/2.jpg',
                     '../images/cricket/cards/icc/slider/2003/3.jpg',
-					'../images/cricket/cards/icc/slider/2003/4.jpg'],
+                    '../images/cricket/cards/icc/slider/2003/4.jpg'],
                 scoreDefeat: '234 all out (39.2 overs)',
                 scoreWin: '359/2 (50 overs)',
                 matchHost: 'South Africa',
@@ -166,7 +166,7 @@ var dataList = [{
                     '../images/cricket/cards/icc/slider/2007/1.jpg',
                     '../images/cricket/cards/icc/slider/2007/2.jpg',
                     '../images/cricket/cards/icc/slider/2007/3.jpg',
-					'../images/cricket/cards/icc/slider/2007/4.jpg'],
+                    '../images/cricket/cards/icc/slider/2007/4.jpg'],
                 scoreDefeat: '215/8 (36 overs)',
                 scoreWin: '281/4 (38 overs)',
                 matchHost: 'West Indies',
@@ -186,7 +186,7 @@ var dataList = [{
                     '../images/cricket/cards/icc/slider/2011/1.jpg',
                     '../images/cricket/cards/icc/slider/2011/2.jpg',
                     '../images/cricket/cards/icc/slider/2011/3.jpg',
-					'../images/cricket/cards/icc/slider/2011/4.jpg'],
+                    '../images/cricket/cards/icc/slider/2011/4.jpg'],
                 scoreDefeat: '274/6 (50 overs)',
                 scoreWin: '277/4 (48.2 overs)',
                 matchHost: 'India',
@@ -206,7 +206,7 @@ var dataList = [{
                     '../images/cricket/cards/icc/slider/2015/1.jpg',
                     '../images/cricket/cards/icc/slider/2015/2.jpg',
                     '../images/cricket/cards/icc/slider/2015/3.jpg',
-					'../images/cricket/cards/icc/slider/2015/4.jpg'],
+                    '../images/cricket/cards/icc/slider/2015/4.jpg'],
                 scoreDefeat: '183 all out (45 overs)',
                 scoreWin: '186/3 (33.1 overs)',
                 matchHost: 'Australia',
@@ -232,7 +232,7 @@ var dataList = [{
                     '../images/cricket/cards/icc-t20/slider/2007/1.jpg',
                     '../images/cricket/cards/icc-t20/slider/2007/2.jpg',
                     '../images/cricket/cards/icc-t20/slider/2007/3.jpg',
-					'../images/cricket/cards/icc-t20/slider/2007/4.jpg'],
+                    '../images/cricket/cards/icc-t20/slider/2007/4.jpg'],
                 scoreDefeat: '152 all out (19.4 overs)',
                 scoreWin: '157/5 (20 overs)',
                 matchHost: 'South Africa',
@@ -252,7 +252,7 @@ var dataList = [{
                     '../images/cricket/cards/icc-t20/slider/2009/1.jpg',
                     '../images/cricket/cards/icc-t20/slider/2009/2.jpg',
                     '../images/cricket/cards/icc-t20/slider/2009/3.jpg',
-					'../images/cricket/cards/icc-t20/slider/2009/4.jpg'],
+                    '../images/cricket/cards/icc-t20/slider/2009/4.jpg'],
                 scoreDefeat: '138/6 (20 overs)',
                 scoreWin: '139/2 (18.4 overs)',
                 matchHost: 'England',
@@ -272,7 +272,7 @@ var dataList = [{
                     '../images/cricket/cards/icc-t20/slider/2010/1.jpg',
                     '../images/cricket/cards/icc-t20/slider/2010/2.jpg',
                     '../images/cricket/cards/icc-t20/slider/2010/3.jpg',
-					'../images/cricket/cards/icc-t20/slider/2010/4.jpg'],
+                    '../images/cricket/cards/icc-t20/slider/2010/4.jpg'],
                 scoreDefeat: '147/6 (20 overs)',
                 scoreWin: '148/3 (17 overs)',
                 matchHost: 'West Indies',
@@ -292,7 +292,7 @@ var dataList = [{
                     '../images/cricket/cards/icc-t20/slider/2012/1.jpg',
                     '../images/cricket/cards/icc-t20/slider/2012/2.jpg',
                     '../images/cricket/cards/icc-t20/slider/2012/3.jpg',
-					'../images/cricket/cards/icc-t20/slider/2012/4.jpg'],
+                    '../images/cricket/cards/icc-t20/slider/2012/4.jpg'],
                 scoreDefeat: '101 all out (18.4 overs)',
                 scoreWin: '137/6 (20 overs)',
                 matchHost: 'Sri Lanka',
@@ -312,7 +312,7 @@ var dataList = [{
                     '../images/cricket/cards/icc-t20/slider/2014/1.jpg',
                     '../images/cricket/cards/icc-t20/slider/2014/2.jpg',
                     '../images/cricket/cards/icc-t20/slider/2014/3.jpg',
-					'../images/cricket/cards/icc-t20/slider/2014/4.jpg'],
+                    '../images/cricket/cards/icc-t20/slider/2014/4.jpg'],
                 scoreDefeat: '130/4 (20 overs)',
                 scoreWin: '134/4 (17.5 overs)',
                 matchHost: 'Bangladesh',
@@ -332,7 +332,7 @@ var dataList = [{
                     '../images/cricket/cards/icc-t20/slider/2016/1.jpg',
                     '../images/cricket/cards/icc-t20/slider/2016/2.jpg',
                     '../images/cricket/cards/icc-t20/slider/2016/3.jpg',
-					'../images/cricket/cards/icc-t20/slider/2016/4.jpg'],
+                    '../images/cricket/cards/icc-t20/slider/2016/4.jpg'],
                 scoreDefeat: '155/9 (20 overs)',
                 scoreWin: '161/6 (19.4 overs)',
                 matchHost: 'India',
@@ -358,7 +358,7 @@ var dataList = [{
                     '../images/cricket/cards/asia-cup/slider/2000/1.jpg',
                     '../images/cricket/cards/asia-cup/slider/2000/2.jpg',
                     '../images/cricket/cards/asia-cup/slider/2000/3.jpg',
-					'../images/cricket/cards/asia-cup/slider/2000/4.jpg'],
+                    '../images/cricket/cards/asia-cup/slider/2000/4.jpg'],
                 scoreDefeat: '238 (45.2 overs)',
                 scoreWin: '277/4 (50 overs)',
                 matchHost: 'Bangladesh',
@@ -378,7 +378,7 @@ var dataList = [{
                     '../images/cricket/cards/asia-cup/slider/2004/1.jpg',
                     '../images/cricket/cards/asia-cup/slider/2004/2.jpg',
                     '../images/cricket/cards/asia-cup/slider/2004/3.jpg',
-					'../images/cricket/cards/asia-cup/slider/2004/4.jpg'],
+                    '../images/cricket/cards/asia-cup/slider/2004/4.jpg'],
                 scoreDefeat: '203/9 (50 overs)',
                 scoreWin: '148/6 (20 overs)',
                 matchHost: 'Sri Lanka',
@@ -398,7 +398,7 @@ var dataList = [{
                     '../images/cricket/cards/asia-cup/slider/2008/1.jpg',
                     '../images/cricket/cards/asia-cup/slider/2008/2.jpg',
                     '../images/cricket/cards/asia-cup/slider/2008/3.jpg',
-					'../images/cricket/cards/asia-cup/slider/2008/4.jpg'],
+                    '../images/cricket/cards/asia-cup/slider/2008/4.jpg'],
                 scoreDefeat: '173 (39.3 overs)',
                 scoreWin: '273 (49.5 overs)',
                 matchHost: 'Pakistan',
@@ -418,7 +418,7 @@ var dataList = [{
                     '../images/cricket/cards/asia-cup/slider/2010/1.jpg',
                     '../images/cricket/cards/asia-cup/slider/2010/2.jpg',
                     '../images/cricket/cards/asia-cup/slider/2010/3.jpg',
-					'../images/cricket/cards/asia-cup/slider/2010/4.jpg'],
+                    '../images/cricket/cards/asia-cup/slider/2010/4.jpg'],
                 scoreDefeat: '187 (44.4 overs)',
                 scoreWin: '268/6 (50 overs)',
                 matchHost: 'Sri Lanka',
@@ -438,7 +438,7 @@ var dataList = [{
                     '../images/cricket/cards/asia-cup/slider/2012/1.jpg',
                     '../images/cricket/cards/asia-cup/slider/2012/2.jpg',
                     '../images/cricket/cards/asia-cup/slider/2012/3.jpg',
-					'../images/cricket/cards/asia-cup/slider/2012/4.jpg'],
+                    '../images/cricket/cards/asia-cup/slider/2012/4.jpg'],
                 scoreDefeat: '234/8 (50 overs)',
                 scoreWin: '236/9 (50 overs)',
                 matchHost: 'Bangladesh',
@@ -458,7 +458,7 @@ var dataList = [{
                     '../images/cricket/cards/asia-cup/slider/2014/1.jpg',
                     '../images/cricket/cards/asia-cup/slider/2014/2.jpg',
                     '../images/cricket/cards/asia-cup/slider/2014/3.jpg',
-					'../images/cricket/cards/asia-cup/slider/2014/4.jpg'],
+                    '../images/cricket/cards/asia-cup/slider/2014/4.jpg'],
                 scoreDefeat: '260/5 (50 overs)',
                 scoreWin: '261/5 (46.2 overs)',
                 matchHost: 'Bangladesh',
@@ -478,7 +478,7 @@ var dataList = [{
                     '../images/cricket/cards/asia-cup/slider/2016/1.jpg',
                     '../images/cricket/cards/asia-cup/slider/2016/2.jpg',
                     '../images/cricket/cards/asia-cup/slider/2016/3.jpg',
-					'../images/cricket/cards/asia-cup/slider/2016/4.jpg'],
+                    '../images/cricket/cards/asia-cup/slider/2016/4.jpg'],
                 scoreDefeat: '120/5 (15 overs)',
                 scoreWin: '122/2 (13.5 overs)',
                 matchHost: 'Bangladesh',
@@ -498,7 +498,7 @@ var dataList = [{
                     '../images/cricket/cards/asia-cup/slider/2018/1.jpg',
                     '../images/cricket/cards/asia-cup/slider/2018/2.jpg',
                     '../images/cricket/cards/asia-cup/slider/2018/3.jpg',
-					'../images/cricket/cards/asia-cup/slider/2018/4.jpg'],
+                    '../images/cricket/cards/asia-cup/slider/2018/4.jpg'],
                 scoreDefeat: '222 (48.3 overs)',
                 scoreWin: '223/7 (50 overs)',
                 matchHost: 'United Arab Emirates',
@@ -524,7 +524,7 @@ var dataList = [{
                     '../images/cricket/cards/psl/slider/2016/1.jpg',
                     '../images/cricket/cards/psl/slider/2016/2.jpg',
                     '../images/cricket/cards/psl/slider/2016/3.jpg',
-					'../images/cricket/cards/psl/slider/2016/4.jpg'],
+                    '../images/cricket/cards/psl/slider/2016/4.jpg'],
                 scoreDefeat: '174/7 (20 overs)',
                 scoreWin: '175/4 (18.4 overs)',
                 matchHost: 'Dubai',
@@ -544,7 +544,7 @@ var dataList = [{
                     '../images/cricket/cards/psl/slider/2017/1.jpg',
                     '../images/cricket/cards/psl/slider/2017/2.jpg',
                     '../images/cricket/cards/psl/slider/2017/3.jpg',
-					'../images/cricket/cards/psl/slider/2017/4.jpg'],
+                    '../images/cricket/cards/psl/slider/2017/4.jpg'],
                 scoreDefeat: '90 (16.3 Overs)',
                 scoreWin: '148/6 (20 overs)',
                 matchHost: 'Lahore',
@@ -564,7 +564,7 @@ var dataList = [{
                     '../images/cricket/cards/psl/slider/2018/1.jpg',
                     '../images/cricket/cards/psl/slider/2018/2.jpg',
                     '../images/cricket/cards/psl/slider/2018/3.jpg',
-					'../images/cricket/cards/psl/slider/2018/4.jpg'],
+                    '../images/cricket/cards/psl/slider/2018/4.jpg'],
                 scoreDefeat: '148/9 (20 overs)',
                 scoreWin: '154/7 (16.5 overs)',
                 matchHost: 'Karachi',
@@ -590,7 +590,7 @@ var dataList = [{
                     '../images/cricket/cards/ipl/slider/2013/1.jpg',
                     '../images/cricket/cards/ipl/slider/2013/2.jpg',
                     '../images/cricket/cards/ipl/slider/2013/3.jpg',
-					'../images/cricket/cards/ipl/slider/2013/4.jpg'],
+                    '../images/cricket/cards/ipl/slider/2013/4.jpg'],
                 scoreDefeat: '125/9 (20 overs)',
                 scoreWin: '148/9 (20 overs)',
                 matchHost: 'Eden Gardens, Kolkata',
@@ -610,7 +610,7 @@ var dataList = [{
                     '../images/cricket/cards/ipl/slider/2014/1.jpg',
                     '../images/cricket/cards/ipl/slider/2014/2.jpg',
                     '../images/cricket/cards/ipl/slider/2014/3.jpg',
-					'../images/cricket/cards/ipl/slider/2014/4.jpg'],
+                    '../images/cricket/cards/ipl/slider/2014/4.jpg'],
                 scoreDefeat: '199/4 (20 overs)',
                 scoreWin: '200/7 (19.3 overs)',
                 matchHost: 'M. Chinnaswamy Stadium, Bengaluru',
@@ -630,7 +630,7 @@ var dataList = [{
                     '../images/cricket/cards/ipl/slider/2015/1.jpg',
                     '../images/cricket/cards/ipl/slider/2015/2.jpg',
                     '../images/cricket/cards/ipl/slider/2015/3.jpg',
-					'../images/cricket/cards/ipl/slider/2015/4.jpg'],
+                    '../images/cricket/cards/ipl/slider/2015/4.jpg'],
                 scoreDefeat: '161/8 (20 overs)',
                 scoreWin: '202/5 (20 overs)',
                 matchHost: 'Eden Gardens, Kolkata',
@@ -650,7 +650,7 @@ var dataList = [{
                     '../images/cricket/cards/ipl/slider/2016/1.jpg',
                     '../images/cricket/cards/ipl/slider/2016/2.jpg',
                     '../images/cricket/cards/ipl/slider/2016/3.jpg',
-					'../images/cricket/cards/ipl/slider/2016/4.jpg'],
+                    '../images/cricket/cards/ipl/slider/2016/4.jpg'],
                 scoreDefeat: '200/7 (20 overs)',
                 scoreWin: '208/7 (20 overs)',
                 matchHost: 'M. Chinnaswamy Stadium, Bengaluru',
@@ -670,7 +670,7 @@ var dataList = [{
                     '../images/cricket/cards/ipl/slider/2017/1.jpg',
                     '../images/cricket/cards/ipl/slider/2017/2.jpg',
                     '../images/cricket/cards/ipl/slider/2017/3.jpg',
-					'../images/cricket/cards/ipl/slider/2017/4.jpg'],
+                    '../images/cricket/cards/ipl/slider/2017/4.jpg'],
                 scoreDefeat: '128/6 (20 overs)',
                 scoreWin: '129/8 (20 overs)',
                 matchHost: 'Rajiv Gandhi International Cricket Stadium, Hyderabad',
@@ -690,7 +690,7 @@ var dataList = [{
                     '../images/cricket/cards/ipl/slider/2018/1.jpg',
                     '../images/cricket/cards/ipl/slider/2018/2.jpg',
                     '../images/cricket/cards/ipl/slider/2018/3.jpg',
-					'../images/cricket/cards/ipl/slider/2018/4.jpg'],
+                    '../images/cricket/cards/ipl/slider/2018/4.jpg'],
                 scoreDefeat: '178/6 (20 overs)',
                 scoreWin: '181/2 (18.3 overs)',
                 matchHost: 'Wankhede Stadium, Mumbai',

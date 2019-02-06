@@ -1,99 +1,97 @@
 /* CSS Document */
-*{user-select: none;}
-
-a{
-	text-decoration: none !important;
+* {
+    user-select: none;
 }
 
-.dis-none{
-	display: none !important;
+a {
+    text-decoration: none !important;
 }
 
-.dis-no{
-	display: none;
+.dis-none {
+    display: none !important;
+}
+
+.dis-no {
+    display: none;
 }
 
 .mr-tb-15 {
-	margin-top: 15px;
-	margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .mr-lr-dec {
-	margin-left: -15px !important;
-	margin-right: -15px !important;
+    margin-left: -15px !important;
+    margin-right: -15px !important;
 }
 
 .mr-b-0 {
-	margin-bottom: 0px !important;
+    margin-bottom: 0px !important;
 }
 
 .pd-t-10 {
-	padding-top: 10px;
+    padding-top: 10px;
 }
 
 .pd-tb-10 {
-	padding-top: 10px;
-	padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .abs-center {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
-.delay-1s{
-	-webkit-animation-delay: 1s !important;
-  	animation-delay: 1s !important;
+.delay-1s {
+    -webkit-animation-delay: 1s !important;
+    animation-delay: 1s !important;
 }
 
 .nav-logo {
-	margin-top: -5px;
-	width: 20px;
-	height: 20px;
+    margin-top: -5px;
+    width: 20px;
+    height: 20px;
 }
 
 .mr-tp-56 {
-	margin-top: 56px;
+    margin-top: 56px;
 }
 
-ul{
-	list-style-type: none;
+ul {
+    list-style-type: none;
 }
 
 .dis-blk {
-	display: block;
+    display: block;
 }
 
 .mr-t-2 {
-	margin-top: 2px !important;
+    margin-top: 2px !important;
 }
 
 .mr-lr-5 {
-	margin-left: 5px;
-	margin-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .mr-tb-5 {
-	margin-top: 5px;
-	margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .pd-5 {
     padding: 5px;
 }
 
-.mr-r-30p{
+.mr-r-30p {
     margin-right: 30%;
 }
 
 .abs-v-center {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-.mega-menu{
-	width: 720px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }

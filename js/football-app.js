@@ -1,46 +1,20 @@
 // JavaScript Document
 
-var events = angular.module("events",[]);
+var events = angular.module("events", []);
 
-events.controller("categoriesControl",function($scope,$filter){
-	$scope.showCat = function(event){
-		var clickedRefer = event.currentTarget;
-		var category = clickedRefer.innerHTML;
-		
-		$scope.eventsArray = $filter('filter')(dataList, {name: category});
-		initHover();
-	};
+events.controller("categoriesControl", function ($scope, $filter) {
+    $scope.showCat = function (event) {
+        var clickedRefer = event.currentTarget;
+        var category = clickedRefer.innerHTML;
+
+        $scope.eventsArray = $filter('filter')(dataList, { name: category });
+        initHover();
+    };
 
     $scope.viewMore = function (event) {
         var clickedRefer = event.currentTarget;
         var sessionName = clickedRefer.parentElement.parentElement.parentElement.parentElement.getElementsByTagName("h3")[0].innerHTML;
 
-        $(".scroll-container h2").addClass("mr-r-30p");
-        $(".right-page h3").css("animation","2s top-to-down-margin");
-
-        $scope.moreDetailsArray = $filter('filter')($scope.eventsArray[0].seasons, { name: sessionName});
-		$("#frame").hide();
-		
-		setTimeout(function(){
-			var data = $("#vidData").html().trim();
-			$("#frame").attr("src",data);
-			$("#frame").show();
-		},1000);
-		
-		$(".right-view").css("display", "none");
-        $(".right-page").css("display", "block");
-		
-		initHover();
-		
-    };
-
-    $scope.viewSubCategory = function (event) {
-        var clickedRefer = event.currentTarget;
-        var sessionName = clickedRefer.innerHTML;
-		
-		var leagueName = clickedRefer.parentElement.parentElement.getElementsByTagName("h3")[0].innerHTML;
-		$scope.eventsArray = $filter('filter')(dataList, {name: leagueName});
-		
         $(".scroll-container h2").addClass("mr-r-30p");
         $(".right-page h3").css("animation", "2s top-to-down-margin");
 
@@ -52,24 +26,50 @@ events.controller("categoriesControl",function($scope,$filter){
             $("#frame").attr("src", data);
             $("#frame").show();
         }, 1000);
-		
-		$(".right-view").css("display", "none");
+
+        $(".right-view").css("display", "none");
         $(".right-page").css("display", "block");
-		
-		initHover();
-		
+
+        initHover();
+
     };
 
-    $scope.eventsArray = $filter('filter')(dataList, { name: 'FIFA WorldCup'});
-	$scope.categoryArray = dataList;
-	initHover();
-	
+    $scope.viewSubCategory = function (event) {
+        var clickedRefer = event.currentTarget;
+        var sessionName = clickedRefer.innerHTML;
+
+        var leagueName = clickedRefer.parentElement.parentElement.getElementsByTagName("h3")[0].innerHTML;
+        $scope.eventsArray = $filter('filter')(dataList, { name: leagueName });
+
+        $(".scroll-container h2").addClass("mr-r-30p");
+        $(".right-page h3").css("animation", "2s top-to-down-margin");
+
+        $scope.moreDetailsArray = $filter('filter')($scope.eventsArray[0].seasons, { name: sessionName });
+        $("#frame").hide();
+
+        setTimeout(function () {
+            var data = $("#vidData").html().trim();
+            $("#frame").attr("src", data);
+            $("#frame").show();
+        }, 1000);
+
+        $(".right-view").css("display", "none");
+        $(".right-page").css("display", "block");
+
+        initHover();
+
+    };
+
+    $scope.eventsArray = $filter('filter')(dataList, { name: 'FIFA WorldCup' });
+    $scope.categoryArray = dataList;
+    initHover();
+
 });
 
-function initHover(){
-	$(function () {
-		$('.hover-effect').hoverdir();
-	});
+function initHover() {
+    $(function () {
+        $('.hover-effect').hoverdir();
+    });
 }
 
 var dataList = [{
@@ -91,7 +91,7 @@ var dataList = [{
                 runnerUp: 'Argentina',
                 winner: 'West Germany',
                 text: 'The 1990 FIFA World Cup was the 14th FIFA World Cup, the quadrennial international football tournament. It was held from 8 June to 8 July 1990 in Italy, the second country to host the event twice (the first being Mexico in 1986). Teams representing 116 national football associations entered and qualification began in April 1988.',
-                vid:'https://www.youtube.com/embed/saey6eRFmwU'
+                vid: 'https://www.youtube.com/embed/saey6eRFmwU'
             }
         },
 
@@ -386,69 +386,69 @@ var dataList = [{
             }
         }
     ]
-    },
+},
 
-    {
-        name: 'La Liga',
-        seasons: [
+{
+    name: 'La Liga',
+    seasons: [
 
-            {
-                name: '2014',
-                wiki: 'https://en.wikipedia.org/wiki/2013%E2%80%9314_La_Liga',
-                imgSrc: '../images/football/cards/laliga/header/2014.jpg',
-                moreDetails: {
-                    images: [
-                        '../images/football/cards/laliga/slider/2014/1.jpg',
-                        '../images/football/cards/laliga/slider/2014/2.jpg',
-                        '../images/football/cards/laliga/slider/2014/3.jpg'],
-                    scoreDefeat: '4 Goals',
-                    scoreWin: '6 Goals',
-                    matchHost: 'Italy',
-                    runnerUp: 'Barcelona',
-                    winner: 'Atletico Madrid',
-                    text: 'The 2014–15 La Liga League (known as the Barclays Premier League for sponsorship reasons) was the 19th season of the Premier League since its establishment in 1992. The 2010–11 fixtures were released on 17 June 2010 at 09:00 BST.[2] The season began on 14 August 2010,[3] and ended on 22 May 2011. Chelsea were the defending champions.',
-                    vid: 'https://www.youtube.com/embed/LF1E3J-3HrA'
-                }
-            },
-
-            {
-                name: '2015',
-                wiki: 'https://en.wikipedia.org/wiki/2015%E2%80%9316_La_Liga',
-                imgSrc: '../images/football/cards/laliga/header/2015.jpg',
-                moreDetails: {
-                    images: [
-                        '../images/football/cards/laliga/slider/2015/1.jpg',
-                        '../images/football/cards/laliga/slider/2015/2.jpg',
-                        '../images/football/cards/laliga/slider/2015/3.jpg'],
-                    scoreDefeat: '0 Goals',
-                    scoreWin: '3 Goals',
-                    matchHost: 'England',
-                    runnerUp: 'Granada',
-                    winner: 'Barcelona',
-                    text: 'The 2015–16 La Liga League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
-                    vid: 'https://www.youtube.com/embed/LF1E3J-3HrA'
-                }
-            },
-
-            {
-                name: '2016',
-                wiki: 'https://en.wikipedia.org/wiki/2016%E2%80%9317_La_Liga',
-                imgSrc: '../images/football/cards/laliga/header/2016.jpg',
-                moreDetails: {
-                    images: [
-                        '../images/football/cards/laliga/slider/2016/1.jpg',
-                        '../images/football/cards/laliga/slider/2016/2.jpg',
-                        '../images/football/cards/laliga/slider/2016/3.jpg'],
-                    scoreDefeat: '5 Goals',
-                    scoreWin: '6 Goals',
-                    matchHost: 'United Kingdom',
-                    runnerUp: 'Barcelona',
-                    winner: 'Real Madrid',
-                    text: 'The 2016–17 La liga League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
-                    vid: 'https://www.youtube.com/embed/LF1E3J-3HrA'
-                }
+        {
+            name: '2014',
+            wiki: 'https://en.wikipedia.org/wiki/2013%E2%80%9314_La_Liga',
+            imgSrc: '../images/football/cards/laliga/header/2014.jpg',
+            moreDetails: {
+                images: [
+                    '../images/football/cards/laliga/slider/2014/1.jpg',
+                    '../images/football/cards/laliga/slider/2014/2.jpg',
+                    '../images/football/cards/laliga/slider/2014/3.jpg'],
+                scoreDefeat: '4 Goals',
+                scoreWin: '6 Goals',
+                matchHost: 'Italy',
+                runnerUp: 'Barcelona',
+                winner: 'Atletico Madrid',
+                text: 'The 2014–15 La Liga League (known as the Barclays Premier League for sponsorship reasons) was the 19th season of the Premier League since its establishment in 1992. The 2010–11 fixtures were released on 17 June 2010 at 09:00 BST.[2] The season began on 14 August 2010,[3] and ended on 22 May 2011. Chelsea were the defending champions.',
+                vid: 'https://www.youtube.com/embed/LF1E3J-3HrA'
             }
-        ]
-    }
+        },
+
+        {
+            name: '2015',
+            wiki: 'https://en.wikipedia.org/wiki/2015%E2%80%9316_La_Liga',
+            imgSrc: '../images/football/cards/laliga/header/2015.jpg',
+            moreDetails: {
+                images: [
+                    '../images/football/cards/laliga/slider/2015/1.jpg',
+                    '../images/football/cards/laliga/slider/2015/2.jpg',
+                    '../images/football/cards/laliga/slider/2015/3.jpg'],
+                scoreDefeat: '0 Goals',
+                scoreWin: '3 Goals',
+                matchHost: 'England',
+                runnerUp: 'Granada',
+                winner: 'Barcelona',
+                text: 'The 2015–16 La Liga League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
+                vid: 'https://www.youtube.com/embed/LF1E3J-3HrA'
+            }
+        },
+
+        {
+            name: '2016',
+            wiki: 'https://en.wikipedia.org/wiki/2016%E2%80%9317_La_Liga',
+            imgSrc: '../images/football/cards/laliga/header/2016.jpg',
+            moreDetails: {
+                images: [
+                    '../images/football/cards/laliga/slider/2016/1.jpg',
+                    '../images/football/cards/laliga/slider/2016/2.jpg',
+                    '../images/football/cards/laliga/slider/2016/3.jpg'],
+                scoreDefeat: '5 Goals',
+                scoreWin: '6 Goals',
+                matchHost: 'United Kingdom',
+                runnerUp: 'Barcelona',
+                winner: 'Real Madrid',
+                text: 'The 2016–17 La liga League (known as the Barclays Premier League for sponsorship reasons) was the 20th season of the Premier League since its establishment in 1992. The season began on 13 August 2011 and ended on 13 May 2012 with Manchester City sealing their first league title since 1968 with victory over Queens Park Rangers on the final day. The title was Citys first Premier League success, making them the fifth club to win the Premier League in its 20-year history',
+                vid: 'https://www.youtube.com/embed/LF1E3J-3HrA'
+            }
+        }
+    ]
+}
 
 ];

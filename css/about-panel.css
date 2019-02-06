@@ -4,7 +4,7 @@
     height: 350px;
 }
 
-.ab-parent>div {
+.ab-parent > div {
     height: 350px;
     background-color: black;
     border-bottom: 1px solid white;
@@ -25,18 +25,18 @@
     margin-top: 35px;
     color: var(--hover);
     text-align: center;
-	font-size: 1.4vw;
+    font-size: 1.4vw;
 }
 
 .ab-heading {
     position: relative;
 }
 
-.ab-heading>div {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
+    .ab-heading > div {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
 .ab-logo-parent img {
     width: 150px;
@@ -47,7 +47,7 @@
     text-align: center;
     color: white;
     margin-top: 20px;
-	font-size: 1.7vw;
+    font-size: 1.7vw;
 }
 
 .relative {
@@ -61,7 +61,7 @@
     transform: translate(-50%, -50%);
 }
 
-.ab-map>div {
+.ab-map > div {
     width: 75%;
     position: absolute;
     top: 50%;
@@ -104,4 +104,3 @@
 a {
     text-decoration: none;
 }
-

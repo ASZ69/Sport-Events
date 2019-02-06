@@ -1,46 +1,20 @@
 // JavaScript Document
 
-var events = angular.module("events",[]);
+var events = angular.module("events", []);
 
-events.controller("categoriesControl",function($scope,$filter){
-	$scope.showCat = function(event){
-		var clickedRefer = event.currentTarget;
-		var category = clickedRefer.innerHTML;
-		
-		$scope.eventsArray = $filter('filter')(dataList, {name: category});
-		initHover();
-	};
+events.controller("categoriesControl", function ($scope, $filter) {
+    $scope.showCat = function (event) {
+        var clickedRefer = event.currentTarget;
+        var category = clickedRefer.innerHTML;
+
+        $scope.eventsArray = $filter('filter')(dataList, { name: category });
+        initHover();
+    };
 
     $scope.viewMore = function (event) {
         var clickedRefer = event.currentTarget;
         var sessionName = clickedRefer.parentElement.parentElement.parentElement.parentElement.getElementsByTagName("h3")[0].innerHTML;
 
-        $(".scroll-container h2").addClass("mr-r-30p");
-        $(".right-page h3").css("animation","2s top-to-down-margin");
-
-        $scope.moreDetailsArray = $filter('filter')($scope.eventsArray[0].seasons, { name: sessionName});
-		$("#frame").hide();
-		
-		setTimeout(function(){
-			var data = $("#vidData").html().trim();
-			$("#frame").attr("src",data);
-			$("#frame").show();
-		},1000);
-		
-		$(".right-view").css("display", "none");
-        $(".right-page").css("display", "block");
-		
-		initHover();
-		
-    };
-
-    $scope.viewSubCategory = function (event) {
-        var clickedRefer = event.currentTarget;
-        var sessionName = clickedRefer.innerHTML;
-		
-		var leagueName = clickedRefer.parentElement.parentElement.getElementsByTagName("h3")[0].innerHTML;
-		$scope.eventsArray = $filter('filter')(dataList, {name: leagueName});
-		
         $(".scroll-container h2").addClass("mr-r-30p");
         $(".right-page h3").css("animation", "2s top-to-down-margin");
 
@@ -52,24 +26,50 @@ events.controller("categoriesControl",function($scope,$filter){
             $("#frame").attr("src", data);
             $("#frame").show();
         }, 1000);
-		
-		$(".right-view").css("display", "none");
+
+        $(".right-view").css("display", "none");
         $(".right-page").css("display", "block");
-		
-		initHover();
-		
+
+        initHover();
+
     };
 
-    $scope.eventsArray = $filter('filter')(dataList, { name: 'Hockey WorldCup'});
-	$scope.categoryArray = dataList;
-	initHover();
-	
+    $scope.viewSubCategory = function (event) {
+        var clickedRefer = event.currentTarget;
+        var sessionName = clickedRefer.innerHTML;
+
+        var leagueName = clickedRefer.parentElement.parentElement.getElementsByTagName("h3")[0].innerHTML;
+        $scope.eventsArray = $filter('filter')(dataList, { name: leagueName });
+
+        $(".scroll-container h2").addClass("mr-r-30p");
+        $(".right-page h3").css("animation", "2s top-to-down-margin");
+
+        $scope.moreDetailsArray = $filter('filter')($scope.eventsArray[0].seasons, { name: sessionName });
+        $("#frame").hide();
+
+        setTimeout(function () {
+            var data = $("#vidData").html().trim();
+            $("#frame").attr("src", data);
+            $("#frame").show();
+        }, 1000);
+
+        $(".right-view").css("display", "none");
+        $(".right-page").css("display", "block");
+
+        initHover();
+
+    };
+
+    $scope.eventsArray = $filter('filter')(dataList, { name: 'Hockey WorldCup' });
+    $scope.categoryArray = dataList;
+    initHover();
+
 });
 
-function initHover(){
-	$(function () {
-		$('.hover-effect').hoverdir();
-	});
+function initHover() {
+    $(function () {
+        $('.hover-effect').hoverdir();
+    });
 }
 
 var dataList = [{
@@ -90,7 +90,7 @@ var dataList = [{
                 runnerUp: 'Pakistan',
                 winner: 'Netherlands',
                 text: 'The 1990 Mens Hockey World Cup was the seventh edition of the Hockey World Cup mens field hockey tournament. It was held in National Hockey Stadium in Lahore, Pakistan from 12–23 February 1990. The Netherlands defeated Pakistan 3–1 in the final, with Australia beating out West Germany for third place in extra time.',
-                vid:'https://www.youtube.com/embed/3fD6hheug4w'
+                vid: 'https://www.youtube.com/embed/3fD6hheug4w'
             }
         },
 

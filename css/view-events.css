@@ -5,6 +5,7 @@
     font-weight: bolder;
     display: inline-block;
     cursor: pointer;
+	color: var(--t-md);
 }
 
 .left-ul li div {
@@ -46,6 +47,7 @@
         border-radius: 5px;
         box-shadow: 0px 4px 8px 0 #ccc;
         transform: scale(1);
+		color: var(--t-sm);
     }
 
         .left-ul li ul li:hover {
@@ -104,6 +106,10 @@
     padding: 5px 0;
 }
 
+.card-heading h4{
+	color: var(--t-sm);
+}
+
 .card-heading h4 {
     float: right;
     font-size: 1.2vw;
@@ -112,6 +118,7 @@
 
 .card-heading h3 {
     font-size: 1.7vw;
+	color: var(--t-md);
 }
 
 .card-heading {
@@ -163,6 +170,7 @@
         margin-right: 35%;
         float: right;
         margin-top: -45px;
+		color: var(--t-md);
     }
 
 @keyframes top-to-down-margin {
@@ -210,10 +218,12 @@
 
 .compare-score h4 {
     font-size: 2.4vw;
+	color: var(--t-md);
 }
 
 .compare-details h1 {
     font-size: 2.2vw;
+	color: var(--t-md);
 }
 
 .border-l {
@@ -245,3 +255,12 @@
             width: 100%;
             height: 100%;
         }
+
+.right-main-heading {
+	transition: 2s all;
+	color: var(--t-md);
+}
+
+.border-l h1,.border-r h1{
+	color: var(--t-md);
+}

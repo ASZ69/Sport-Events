@@ -4,4 +4,8 @@
     --hover: #00FFF3;
     /*	--index-overlay: rgba(75,75,75,0.7);*/
     --index-overlay: rgba(0,255,243,0.55);
+/*	--t-md: orangered;*/
+	--t-md: black;
+/*	--t-sm: pink;*/
+	--t-sm: black;
 }

@@ -8,6 +8,14 @@ h1 {
     font-size: 2vw;
 }
 
+h1.text-center {
+    color: var(--t-md);
+}
+
+h3.text-center{
+	color: var(--t-md);
+}
+
 .bg-img1 {
     position: relative;
     width: 100%;
@@ -53,6 +61,7 @@ h1 {
 
 .sides h4 {
     margin-left: 10px;
+	color: var(--t-md);
 }
 
 .sides ul {
@@ -67,10 +76,11 @@ h1 {
         line-height: 3.4vw;
         padding-left: 10px;
 		font-size: 1.2vw;
+		color: var(--t-sm);
     }
 
         .sides ul li:hover {
-            background-color: #ccc;
+            background-color: var(--hover);
             cursor: pointer;
         }
 
@@ -85,7 +95,7 @@ h1 {
 }
 
 .vid-p h1 {
-    color: #545454;
+    color: var(--t-md);
     border-bottom: 1px solid #ccc;
     text-align: center;
 }
@@ -98,6 +108,7 @@ h1 {
 
     .vid-p p {
         text-align: center;
+		color: var(--t-sm);
     }
 
 .heading-transparent {

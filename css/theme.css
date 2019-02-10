@@ -1,19 +1,25 @@
 /* CSS Document */
 
 :root {
-    --hover: #00FFF3;
-    /*	--index-overlay: rgba(75,75,75,0.7);*/
+    
+/*	hover*/
+	--hover: #00FFF3;
     --index-overlay: rgba(0,255,243,0.55);
-/*	--t-md: orangered;*/
-	--t-md: white;
-/*	--t-sm: pink;*/
-	--t-sm: white;
+/*	hover*/
 	
+/*	text*/
+	--t-md: white;
+	--t-sm: white;
+/*	text*/
+	
+/*	card*/
+	--bg-cd: #ccc;
 	--cd-t-sm: black;
 	--cd-t-md: black;
+/*	card*/
 	
+/*	background*/
 	--bg: #111;
-	--bg-cd: #ccc;
-/*	--bg-rev: #383838;*/
 	--bg-rev: #fff;
+/*	background*/
 }

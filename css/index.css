@@ -71,6 +71,7 @@ h1.my-rows{
 .sides h4 {
     margin-left: 10px;
 	color: var(--t-md);
+	font-size: 1.5vw;
 }
 
 .sides ul {

@@ -35,7 +35,7 @@
     <title>Sports-Events - Basketball</title>
 </head>
 
-<body>
+<body ng-app="events" ng-controller="categoriesControl">
 
     <nav class="navbar navbar-expand-lg navbar-dark nav-color fixed-top">
 
@@ -370,7 +370,7 @@
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">Basketball</a>
-                    <div class="dropdown-menu mega-menu" style="width: 380px;">
+                    <div class="dropdown-menu mega-menu" style="width: 400px;">
                         <div class="row">
                             <div class="col-md-6">
                                 <a href="basketball.html">
@@ -432,13 +432,12 @@
 				
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" ng-model="search">
             </form>
         </div>
     </nav>
 
-    <div class="container-fluid mr-tp-56" ng-app="events" ng-controller="categoriesControl">
+    <div class="container-fluid mr-tp-56">
 
         <div class="row">
 
@@ -446,7 +445,7 @@
                 <div class="scroll-container">
                     <br>
                     <ul class="left-ul">
-                        <li ng-repeat="league in categoryArray">
+                        <li ng-repeat="league in categoryArray | filter:search">
                             <div>
                                 <span class="fa fa-caret-down"></span>
                                 <h3 ng-click="showCat($event)" onclick="goToBack()">{{league.name}}</h3>

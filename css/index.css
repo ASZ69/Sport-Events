@@ -188,3 +188,7 @@ h1.my-rows{
     .btn-hover:after {
         content: 'View Event';
     }
+
+.bg-body {
+	background-color: var(--bg);
+}

@@ -5,8 +5,15 @@
     /*	--index-overlay: rgba(75,75,75,0.7);*/
     --index-overlay: rgba(0,255,243,0.55);
 /*	--t-md: orangered;*/
-	--t-md: black;
+	--t-md: white;
 /*	--t-sm: pink;*/
-	--t-sm: black;
-	--bg: pink;
+	--t-sm: white;
+	
+	--cd-t-sm: black;
+	--cd-t-md: black;
+	
+	--bg: #111;
+	--bg-cd: #ccc;
+/*	--bg-rev: #383838;*/
+	--bg-rev: #fff;
 }

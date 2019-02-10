@@ -25,6 +25,7 @@
     cursor: pointer;
     margin: 8px;
     width: 5%;
+	color: var(--t-md);
 }
 
 .left-ul > li {
@@ -78,7 +79,7 @@
 
     .right-view > div {
         width: 300px;
-        background-color: white;
+        background-color: var(--bg-cd);
         box-shadow: 0 4px 8px 0 #ccc;
         border-radius: 5px;
         padding: 8px 5px;
@@ -86,7 +87,7 @@
     }
 
         .right-view > div:hover {
-            box-shadow: 0 6px 12px 0 #383838;
+            box-shadow: 0 6px 12px 0 var(--bg-rev);
         }
 
 .cd-img-p img {
@@ -106,19 +107,18 @@
     padding: 5px 0;
 }
 
-.card-heading h4{
-	color: var(--t-sm);
-}
+
 
 .card-heading h4 {
     float: right;
     font-size: 1.2vw;
     padding-top: 7px;
+	color: var(--cd-t-sm);
 }
 
 .card-heading h3 {
     font-size: 1.7vw;
-	color: var(--t-md);
+	color: var(--cd-t-md);
 }
 
 .card-heading {
@@ -199,6 +199,8 @@
     margin-top: -50px;
     margin-left: 0px;
     font-size: 1vw;
+	border-color: var(--bg-rev);
+	color: var(--t-md);
 }
 
 .compare-score {
@@ -263,4 +265,8 @@
 
 .border-l h1,.border-r h1{
 	color: var(--t-md);
+}
+
+.compare-details > .row > div.border-l > div{
+	color: var(--t-sm);
 }

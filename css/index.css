@@ -16,6 +16,14 @@ h3.text-center{
 	color: var(--t-md);
 }
 
+h1.my-rows{
+	background-color: var(--bg);
+}
+
+.r-color{
+	background-color: var(--bg);
+}
+
 .bg-img1 {
     position: relative;
     width: 100%;
@@ -57,6 +65,7 @@ h3.text-center{
     top: 50px !important;
     left: 0px !important;
     padding: 20px 0;
+	background-color: var(--bg);
 }
 
 .sides h4 {
@@ -104,6 +113,7 @@ h3.text-center{
     position: relative;
     z-index: 1;
     margin-top: 50px;
+	background-color: var(--bg);
 }
 
     .vid-p p {

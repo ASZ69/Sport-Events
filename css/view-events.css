@@ -270,3 +270,7 @@
 .compare-details > .row > div.border-l > div{
 	color: var(--t-sm);
 }
+
+button.btn.btn-info > a:hover,button.btn.btn-info > a{
+	color: var(--t-md);
+}

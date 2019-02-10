@@ -27,6 +27,12 @@ body {
 	  background: #555;
 	}
 
+button.btn.btn-info{
+	background-color: var(--hover-btn);
+	border-color: var(--hover-btn);
+	color: var(--t-md);
+}
+
 a {
     text-decoration: none !important;
 	color: black;

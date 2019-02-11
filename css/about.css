@@ -1,7 +1,31 @@
 /* CSS Document */
-h1{
+h1,h2{
 	color: var(--t-md);
 }
+
+h2{
+	font-size: 2.4vw;
+}
+
+p{
+	color: var(--t-sm);
+	margin: 10%;
+	font-size: 2vw;
+}
+
+video{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 1;
+	opacity: 0.4;
+/*	height: 100%;*/
+	filter: blur(3px);
+}
+
 .top-heading {
 	font-size: 3.6vw;
 	border-bottom: 8px double #fff;
@@ -13,3 +37,41 @@ h1{
 .mr-t-20 {
 	margin-top: 20px;
 }
+
+.p-parent {
+	margin: 20px;
+	padding: 15px 5px;
+	background-color: #333;
+	position: relative;
+	z-index: 1;
+	transition: 1s all;
+}
+
+.p-parent:hover{
+	opacity: 0.4;
+	cursor: pointer;
+}
+
+.ab-developer {
+	width: 47%;
+	height: 100%;
+	vertical-align: middle;
+	float: right;
+	margin-top: 5.5%;
+}
+
+.ab-developer p{
+	font-size: 1.4vw;
+}
+
+.parent {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	z-index: 1;
+}
+
+

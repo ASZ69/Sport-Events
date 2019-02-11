@@ -6,6 +6,10 @@ h1{
 	font-size: 3.6vw;
 	border-bottom: 8px double #fff;
 	width: 17vw;
-	margin: auto;
+	margin: 66px auto 10px;
 	text-align: center;
+}
+
+.mr-t-20 {
+	margin-top: 20px;
 }

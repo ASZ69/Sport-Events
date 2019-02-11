@@ -1,0 +1,11 @@
+/* CSS Document */
+h1{
+	color: var(--t-md);
+}
+.top-heading {
+	font-size: 3.6vw;
+	border-bottom: 8px double #fff;
+	width: 17vw;
+	margin: auto;
+	text-align: center;
+}

@@ -3,7 +3,7 @@
 $(document).ready(function () {
     var selected = localStorage.getItem("Theme");
     if (selected == null) {
-        loadTheme("standard");
+        loadTheme("Night");
     } else {
         loadTheme(selected);
     }
@@ -34,7 +34,6 @@ function loadTheme(selected) {
         case "Day (Colored)":
             document.documentElement.style.setProperty('--hover', '#F0C36F');
             document.documentElement.style.setProperty('--index-overlay', 'rgba(152,34,6,0.60)');
-            //			document.documentElement.style.setProperty('--hover-btn', 'rgba(236,209,119,1.00)');
             document.documentElement.style.setProperty('--hover-btn', '#C4DBFF');
             document.documentElement.style.setProperty('--t-md', '#006F55');
             document.documentElement.style.setProperty('--t-sm', '#09B48C');

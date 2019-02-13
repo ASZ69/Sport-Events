@@ -1,51 +1,25 @@
 // JavaScript Document
 
-String.prototype.replaceAll = function(search, replacement) {
+String.prototype.replaceAll = function (search, replacement) {
     var target = this;
     return target.split(search).join(replacement);
 };
 
-var events = angular.module("events",[]);
+var events = angular.module("events", []);
 
-events.controller("categoriesControl",function($scope,$filter){
-	$scope.showCat = function(event){
-		var clickedRefer = event.currentTarget;
-		var category = clickedRefer.innerHTML;
-		
-		$scope.eventsArray = $filter('filter')(dataList, {name: category});
-		initHover();
-	};
+events.controller("categoriesControl", function ($scope, $filter) {
+    $scope.showCat = function (event) {
+        var clickedRefer = event.currentTarget;
+        var category = clickedRefer.innerHTML;
+
+        $scope.eventsArray = $filter('filter')(dataList, { name: category });
+        initHover();
+    };
 
     $scope.viewMore = function (event) {
         var clickedRefer = event.currentTarget;
         var sessionName = clickedRefer.parentElement.parentElement.parentElement.parentElement.getElementsByTagName("h3")[0].innerHTML;
 
-        $(".scroll-container h2").addClass("mr-r-30p");
-        $(".right-page h3").css("animation","2s top-to-down-margin");
-
-        $scope.moreDetailsArray = $filter('filter')($scope.eventsArray[0].seasons, { name: sessionName});
-		$("#frame").hide();
-		
-		setTimeout(function(){
-			var data = $("#vidData").html().trim();
-			$("#frame").attr("src",data);
-			$("#frame").show();
-		},1000);
-		
-		$(".right-view").css("display", "none");
-        $(".right-page").css("display", "block");
-		
-		initHover();
-		
-    };
-
-    $scope.viewSubCategory = function (event) {
-        var clickedRefer = event.currentTarget;
-        var sessionName = clickedRefer.innerHTML;
-		
-		var leagueName = clickedRefer.parentElement.parentElement.getElementsByTagName("h3")[0].innerHTML;
-		$scope.eventsArray = $filter('filter')(dataList, {name: leagueName});
-		
         $(".scroll-container h2").addClass("mr-r-30p");
         $(".right-page h3").css("animation", "2s top-to-down-margin");
 
@@ -57,60 +31,86 @@ events.controller("categoriesControl",function($scope,$filter){
             $("#frame").attr("src", data);
             $("#frame").show();
         }, 1000);
-		
-		$(".right-view").css("display", "none");
+
+        $(".right-view").css("display", "none");
         $(".right-page").css("display", "block");
-		
-		initHover();
-		
+
+        initHover();
+
     };
-	
-	//	check url to get specific result
-	var url = window.location.search.replace("?","").replaceAll("%22","").replaceAll("%20"," ");
-	if(url == ""){
-		
-		$scope.eventsArray = $filter('filter')(dataList, { name: 'Basketball WorldCup' });
-		initHover();
-		
-	}else{
-		
-		var parts = url.split("&");
-		var category = parts[0].split("=")[1];
-		var season = parts[1].split("=")[1];
-		
+
+    $scope.viewSubCategory = function (event) {
+        var clickedRefer = event.currentTarget;
+        var sessionName = clickedRefer.innerHTML;
+
+        var leagueName = clickedRefer.parentElement.parentElement.getElementsByTagName("h3")[0].innerHTML;
+        $scope.eventsArray = $filter('filter')(dataList, { name: leagueName });
+
+        $(".scroll-container h2").addClass("mr-r-30p");
+        $(".right-page h3").css("animation", "2s top-to-down-margin");
+
+        $scope.moreDetailsArray = $filter('filter')($scope.eventsArray[0].seasons, { name: sessionName });
+        $("#frame").hide();
+
+        setTimeout(function () {
+            var data = $("#vidData").html().trim();
+            $("#frame").attr("src", data);
+            $("#frame").show();
+        }, 1000);
+
+        $(".right-view").css("display", "none");
+        $(".right-page").css("display", "block");
+
+        initHover();
+
+    };
+
+    //	check url to get specific result
+    var url = window.location.search.replace("?", "").replaceAll("%22", "").replaceAll("%20", " ");
+    if (url == "") {
+
+        $scope.eventsArray = $filter('filter')(dataList, { name: 'Basketball WorldCup' });
+        initHover();
+
+    } else {
+
+        var parts = url.split("&");
+        var category = parts[0].split("=")[1];
+        var season = parts[1].split("=")[1];
+
         $scope.eventsArray = $filter('filter')(dataList, { name: category });
 
-        if(season != ""){
-			$(".scroll-container h2").addClass("mr-r-30p");
-			$(".right-page h3").css("animation", "2s top-to-down-margin");
+        if (season != "") {
+            $(".scroll-container h2").addClass("mr-r-30p");
+            $(".right-page h3").css("animation", "2s top-to-down-margin");
 
-			$scope.moreDetailsArray = $filter('filter')($scope.eventsArray[0].seasons, { name: season });
+            $scope.moreDetailsArray = $filter('filter')($scope.eventsArray[0].seasons, { name: season });
 
-			$("#frame").hide();
+            $("#frame").hide();
 
-			setTimeout(function () {
-				var data = $("#vidData").html().trim();
-				$("#frame").attr("src", data);
-				$("#frame").show();
-			}, 1000);
+            setTimeout(function () {
+                var data = $("#vidData").html().trim();
+                $("#frame").attr("src", data);
+                $("#frame").show();
+            }, 1000);
 
 
-			$(".right-view").css("display", "none");
-			$(".right-page").css("display", "block");
-		}
-		
+            $(".right-view").css("display", "none");
+            $(".right-page").css("display", "block");
+        }
+
         initHover();
-		
-	}
-	
+
+    }
+
     $scope.categoryArray = dataList;
-	
+
 });
 
-function initHover(){
-	$(function () {
-		$('.hover-effect').hoverdir();
-	});
+function initHover() {
+    $(function () {
+        $('.hover-effect').hoverdir();
+    });
 }
 
 var dataList = [{
@@ -131,7 +131,7 @@ var dataList = [{
                 runnerUp: 'Soviet Union',
                 winner: 'Yugoslavia',
                 text: 'The 1990 FIBA World Championship was the 11th FIBA World Championship, the international basketball world championship for mens teams. It was hosted by Argentina from August 8 to August 20, 1990. The competition final phase was held at the Luna Park, Buenos Aires.',
-                vid:'https://www.youtube.com/embed/kSjZgNuM4cI'
+                vid: 'https://www.youtube.com/embed/kSjZgNuM4cI'
             }
         },
 

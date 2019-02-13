@@ -1,50 +1,50 @@
 /* CSS Document */
 * {
     user-select: none;
-	scroll-behavior: smooth;
-	font-family: 'Noto Serif', serif;
+    scroll-behavior: smooth;
+    font-family: 'Noto Serif', serif;
 }
 
 body {
-	background-color: var(--bg);
+    background-color: var(--bg);
 }
 
-	::-webkit-scrollbar {
-	  width: 10px;
-	}
-
-	/* Track */
-	::-webkit-scrollbar-track {
-	  background: #f1f1f1;
-	}
-
-	/* Handle */
-	::-webkit-scrollbar-thumb {
-	  background: #888; 
-	}
-
-	/* Handle on hover */
-	::-webkit-scrollbar-thumb:hover {
-	  background: #555;
-	}
-
-.nav-color{
-	background-color: var(--bg-nav);
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-div.dropdown-menu.mega-menu{
-	background-color: var(--bg);
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
 }
 
-button.btn.btn-info{
-	background-color: var(--hover-btn);
-	border-color: var(--hover-btn);
-	color: var(--t-md);
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+.nav-color {
+    background-color: var(--bg-nav);
+}
+
+div.dropdown-menu.mega-menu {
+    background-color: var(--bg);
+}
+
+button.btn.btn-info {
+    background-color: var(--hover-btn);
+    border-color: var(--hover-btn);
+    color: var(--t-md);
 }
 
 a {
     text-decoration: none !important;
-	color: black;
+    color: black;
 }
 
 .dis-none {
@@ -135,12 +135,13 @@ ul {
     top: 50%;
     transform: translateY(-50%);
 }
+
 .mr-lr-10 {
-	margin-left: 10px;
-	margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-div>a>img[alt="www.000webhost.com"]{
-	position: fixed;
-	z-index: -9999;
+div > a > img[alt="www.000webhost.com"] {
+    position: fixed;
+    z-index: -9999;
 }
